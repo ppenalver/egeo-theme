@@ -1,0 +1,19 @@
+{
+   "name": "ui-fonts",
+   "version": "",
+   "license": "Apache-2.0",
+   "description": "UI-Fonts library",
+   "scripts": {
+      "replace": "json -I -f package.json -e",
+      "build": "node-sass --include-path scss fonts/index.scss fonts.css",
+      "test": ""
+   },
+   "author": "Stratio",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/Stratio/ui-fonts"
+   },
+   "devDependencies": {
+      "node-sass": "3.13.0"
+   }
+}
