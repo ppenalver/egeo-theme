@@ -83,17 +83,6 @@
             </configuration>
           </execution>
           <execution>
-            <id>npm test</id>
-            <goals>
-              <goal>npm</goal>
-            </goals>
-            <phase>test</phase>
-            <configuration>
-              <skipTests>${skipUTs}</skipTests>
-              <arguments>run-script test</arguments>
-            </configuration>
-          </execution>
-          <execution>
             <id>npm publish</id>
             <goals>
               <goal>npm</goal>
