@@ -3,3 +3,9 @@ fonts
 .npmrc
 pom.xml
 .editorconfig
+*.log
+node
+target
+Jenkinsfile
+README.md
+CHANGELOG.md
