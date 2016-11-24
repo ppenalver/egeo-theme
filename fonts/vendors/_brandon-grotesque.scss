@@ -22,11 +22,11 @@ $egeo-brandon-grotesque: true !default;
    @font-face {
       font-family: 'Brandon Grotesque';
 
-      src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-regular.eot');
-      src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-regular.eot?#iefix') format('embedded-opentype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-regular.woff') format('woff'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-regular.ttf') format('truetype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-regular.svg#BrandonGrotesqueRegular') format('svg');
+      src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-regular.eot');
+      src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-regular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-regular.woff') format('woff'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-regular.ttf') format('truetype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-regular.svg#BrandonGrotesqueRegular') format('svg');
       font-weight: normal;
       font-weight: 400;
       font-style: normal;
@@ -35,11 +35,11 @@ $egeo-brandon-grotesque: true !default;
     // Light
    @font-face {
       font-family: 'Brandon Grotesque';
-      src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-light.eot');
-      src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-light.eot?#iefix') format('embedded-opentype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-light.woff') format('woff'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-light.ttf') format('truetype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-light.svg#BrandonGrotesqueLight') format('svg');
+      src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-light.eot');
+      src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-light.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-light.woff') format('woff'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-light.ttf') format('truetype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-light.svg#BrandonGrotesqueLight') format('svg');
       font-weight: 200;
       font-style: normal;
    }
@@ -47,11 +47,11 @@ $egeo-brandon-grotesque: true !default;
     // Bold
     @font-face {
         font-family: 'Brandon Grotesque';
-        src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-bold.eot');
-        src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-bold.eot?#iefix') format('embedded-opentype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-bold.woff') format('woff'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-bold.ttf') format('truetype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-bold.svg#BrandonGrotesqueBold') format('svg');
+        src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-bold.eot');
+        src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-bold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-bold.woff') format('woff'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-bold.ttf') format('truetype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-bold.svg#BrandonGrotesqueBold') format('svg');
         font-weight: bold;
         font-weight: 700;
         font-style: normal;
@@ -61,11 +61,11 @@ $egeo-brandon-grotesque: true !default;
    // Extra Bold
    @font-face {
       font-family: 'Brandon Grotesque';
-      src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-black.eot');
-      src: url('../vendors/fonts/brandon-grotesque/brandongrotesque-black.eot?#iefix') format('embedded-opentype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-black.woff') format('woff'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-black.ttf') format('truetype'),
-         url('../vendors/fonts/brandon-grotesque/brandongrotesque-black.svg#BrandonGrotesqueBlack') format('svg');
+      src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-black.eot');
+      src: url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-black.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-black.woff') format('woff'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-black.ttf') format('truetype'),
+         url('./fonts/vendors/fonts/brandon-grotesque/brandongrotesque-black.svg#BrandonGrotesqueBlack') format('svg');
       font-weight: 900;
       font-style: normal;
    }
