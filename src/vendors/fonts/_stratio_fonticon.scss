@@ -16,13 +16,12 @@
 //
 // Styleguide 4.1
 
-$egeo-stratio-icons: true !default;
-
+// sass-lint:disable indentation, no-duplicate-properties, no-vendor-prefixes, class-name-format, leading-zero, no-color-literals
 @if $egeo-stratio-icons {
     @font-face {
         font-family: 'ico_stratio';
-        src:url('./fonts/vendors/fonts/stratio-fonticon/ico_stratio.eot');
-        src:url('./fonts/vendors/fonts/stratio-fonticon/ico_stratio.eot') format('embedded-opentype'),
+        src: url('./fonts/vendors/fonts/stratio-fonticon/ico_stratio.eot');
+        src: url('./fonts/vendors/fonts/stratio-fonticon/ico_stratio.eot') format('embedded-opentype'),
         url('./fonts/vendors/fonts/stratio-fonticon/ico_stratio.ttf') format('truetype'),
         url('./fonts/vendors/fonts/stratio-fonticon/ico_stratio.woff') format('woff'),
         url('./fonts/vendors/fonts/stratio-fonticon/ico_stratio.svg') format('svg');
@@ -30,7 +29,8 @@ $egeo-stratio-icons: true !default;
         font-style: normal;
     }
 
-    [class^="icon-"], [class*=" icon-"] {
+    [class^="icon-"],
+    [class*=" icon-"] {
         /* use !important to prevent issues with browser extensions that change fonts */
         font-family: 'ico_stratio' !important;
         speak: none;

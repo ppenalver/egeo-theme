@@ -15,16 +15,15 @@
 //
 // Styleguide 4.2
 
-$egeo-droid-sans-mono: true !default;
-
+// sass-lint:disable no-duplicate-properties
 @if $egeo-droid-sans-mono {
    @font-face {
       font-family: 'DroidSansMonoRegular';
       src: url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.eot');
       src: url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.woff') format('woff'),
-         url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.ttf') format('truetype'),
-         url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.svg#DroidSansMonoRegular') format('svg');
+      url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.woff') format('woff'),
+      url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.ttf') format('truetype'),
+      url('./fonts/vendors/fonts/droid-sans-mono/droid-sans-mono-webfont.svg#DroidSansMonoRegular') format('svg');
       font-weight: normal;
       font-style: normal;
    }

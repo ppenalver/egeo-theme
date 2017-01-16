@@ -1,0 +1,20 @@
+// This is the root path from where the system will try load the fonts
+$egeo-fontface-src: '/assets/fonts' !default;
+
+//
+// By default, the whole fonts are loaded. Uncomment to avoid it.
+//
+// $egeo-brandon-grotesque: false;
+// $egeo-open-sans: false;
+// $egeo-droid-sans-mono: false;
+// $egeo-stratio-icons: false;
+
+$egeo-brandon-grotesque: true !default;
+$egeo-droid-sans-mono: true !default;
+$egeo-open-sans: true !default;
+$egeo-stratio-icons: true !default;
+
+@import '../vendors/fonts/brandon-grotesque';
+@import '../vendors/fonts/open-sans';
+@import '../vendors/fonts/droid-sans-mono';
+@import '../vendors/fonts/stratio_fonticon';

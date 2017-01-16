@@ -3,10 +3,11 @@
    "version": "",
    "license": "Apache-2.0",
    "description": "UI-Fonts library",
+   "sasslintConfig": ".sass-lint.yml",
    "scripts": {
       "replace": "json -I -f package.json -e",
-      "build": "node-sass --include-path scss fonts/index.scss fonts.css",
-      "test": ""
+      "build": "rm -rf dist && node-sass --include-path scss src/index.scss dist/egeo-theme-stratio.css",
+      "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q"
    },
    "author": "Stratio",
    "repository": {
@@ -14,7 +15,11 @@
       "url": "https://github.com/Stratio/ui-fonts"
    },
    "devDependencies": {
-      "node-sass": "3.13.0",
-      "json": "9.0.4"
+      "json": "9.0.4",
+      "node-sass": "3.13.0"
+   },
+   "dependencies": {
+      "sass-lint": "^1.10.2",
+      "save-dev": "^2.0.0"
    }
 }

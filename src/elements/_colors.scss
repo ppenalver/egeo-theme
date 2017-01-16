@@ -1,0 +1,46 @@
+// Each property you want to generate combinations with colors
+$properties: (
+   'background': 'background-color',
+   'border': 'border-color',
+   'color': 'color') !default;
+
+// Each step from 1 to 99 where the classes will be generated.
+// i.e. for base 10, you will generate color-property-t10, 
+// color-property-t20...color-property-t90 and so on.
+//
+// Note that you will never have color-property-t0 or 
+// color-property-t100
+$transparent-step: 10 !default;
+
+@if $egeo-rgb-colors {
+   // Iterate the whole RGB colors
+   @each $cname, $cvalue in $egeo-rgb-colors {
+      // Iterate the whole properties we want to create classes for
+      @each $pname, $pvalue in $properties {
+         $i: $transparent-step;
+
+         $first: true;
+
+         // Iterate the transparency values
+         @while $i < 100 {
+            // At first, we create the base class
+            // color-property with no transparency
+            @if $first {
+               .#{$cname}-#{$pname} {
+                  #{$pvalue}: $cvalue;
+               }
+
+               $first: false;
+            }
+
+            // Here is written the color-propery-tX classes
+            // sass-lint:disable no-color-literals
+            .#{$cname}-#{$pname}-t#{$i} {
+               #{$pvalue}: rgba($cvalue, $i/100);
+            }
+
+            $i: $i + $transparent-step;
+         }
+      }
+   }
+}
