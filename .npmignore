@@ -1,6 +1,8 @@
-fonts/settings
-fonts/vendors/*.scss
-fonts/index.scss
+src/elements
+src/objects
+src/utils
+src/settings
+src/vendors/**/*.scss
 .gitignore
 .npmrc
 pom.xml

@@ -1,25 +1,24 @@
 {
-   "name": "ui-fonts",
-   "version": "",
-   "license": "Apache-2.0",
-   "description": "UI-Fonts library",
-   "sasslintConfig": ".sass-lint.yml",
-   "scripts": {
-      "replace": "json -I -f package.json -e",
-      "build": "rm -rf dist && node-sass --include-path scss src/index.scss dist/egeo-theme-stratio.css",
-      "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q"
-   },
-   "author": "Stratio",
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/Stratio/ui-fonts"
-   },
-   "devDependencies": {
-      "json": "9.0.4",
-      "node-sass": "3.13.0"
-   },
-   "dependencies": {
-      "sass-lint": "^1.10.2",
-      "save-dev": "^2.0.0"
-   }
+  "name": "ui-fonts",
+  "version": "",
+  "license": "Apache-2.0",
+  "description": "UI-Fonts library",
+  "sasslintConfig": ".sass-lint.yml",
+  "scripts": {
+    "replace": "json -I -f package.json -e",
+    "build": "rimraf egeo-theme-stratio.css && node-sass --include-path scss src/index.scss egeo-theme-stratio.css",
+    "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
+    "clean:dist": "rimraf egeo-theme-stratio.css"
+  },
+  "author": "Stratio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stratio/ui-fonts"
+  },
+  "devDependencies": {
+    "json": "9.0.4",
+    "node-sass": "3.13.0",
+    "rimraf": "2.5.4",
+    "sass-lint": "1.10.2"
+  }
 }
