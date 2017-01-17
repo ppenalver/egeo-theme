@@ -1513,6 +1513,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://sodio.stratio.com/nexus/content/groups/publicnpm/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
+ui-base@0.1.0:
+  version "0.1.0"
+  resolved "http://sodio.stratio.com/nexus/content/groups/publicnpm/ui-base/-/ui-base-0.1.0.tgz#e4987d2918ebd007ea4fe633358d07b34b762c53"
+
 user-home@^2.0.0:
   version "2.0.0"
   resolved "http://sodio.stratio.com/nexus/content/groups/publicnpm/user-home/-/user-home-2.0.0.tgz#9c70bfd8169bc1dcbf48604e0f04b8b49cde9e9f"

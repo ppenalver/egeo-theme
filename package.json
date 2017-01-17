@@ -16,6 +16,7 @@
     "url": "https://github.com/Stratio/ui-fonts"
   },
   "devDependencies": {
+    "ui-base": "0.1.0",
     "json": "9.0.4",
     "node-sass": "3.13.0",
     "rimraf": "2.5.4",
