@@ -6,7 +6,7 @@
   "sasslintConfig": ".sass-lint.yml",
   "scripts": {
     "replace": "json -I -f package.json -e",
-    "build": "rimraf egeo-theme-stratio.css && node-sass --include-path scss src/index.scss egeo-theme-stratio.css && postcss --use autoprefixer *.css -d .",
+    "build": "rimraf egeo-theme-stratio.css && node-sass --include-path scss src/index.scss egeo-theme-stratio.css && postcss --use autoprefixer *.css -d . && cleancss --source-map --output egeo-theme-stratio.min.css egeo-theme-stratio.css",
     "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
     "clean:dist": "rimraf egeo-theme-stratio.css"
   },
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "autoprefixer": "6.5.1",
+    "clean-css": "3.4.20",
     "json": "9.0.4",
     "node-sass": "4.3.0",
     "postcss-cli": "2.6.0",
