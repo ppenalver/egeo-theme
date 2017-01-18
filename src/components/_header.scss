@@ -1,8 +1,10 @@
 @import '../../node_modules/ui-base/utils/typography';
 @import '../../node_modules/ui-base/utils/colors';
 
+$header-background: egeo-get-color(b2) !default;
+
 .sth-header {
-   background-color: egeo-get-color(b2);
+   background-color: $header-background;
 }
 
 .sth-header-border {
@@ -13,14 +15,18 @@
    background-color: egeo-get-color(b3);
 }
 
-.sth-app-name {
+.sth-app {
    color: egeo-get-color(n0);
 }
 
-.sth-logo {
+.sth-app-name {
    font-family: egeo-get-font('brandon-grotesque');
    font-size: egeo-get-font-size(head_large);
    font-weight: 500;
+}
+
+.sth-logo {
+   font-size: 48px;
 }
 
 .sth-company-name {
