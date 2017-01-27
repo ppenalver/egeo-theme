@@ -2,14 +2,13 @@
 
 hose {
     EMAIL = 'front'
-    MODULE = 'egeo-ui-fonts'
+    MODULE = 'egeo-theme'
     DEVTIMEOUT = 30
     RELEASETIMEOUT = 30
-    REPOSITORY = 'egeo-ui-fonts'
+    REPOSITORY = 'github.com/egeo-theme'
 
     DEV = { config ->
         doCompile(config)
         doDeploy(config)
-
     }
 }
