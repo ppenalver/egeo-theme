@@ -1,0 +1,30 @@
+@import '../../node_modules/ui-base/utils/typography';
+@import '../../node_modules/ui-base/utils/colors';
+
+.sth-dropdown-menu {
+   background-color: egeo-get-color(n0);
+   font-family: egeo-get-font(open-sans);
+   font-weight: egeo-get-font-weight(normal);
+   font-size: egeo-get-font-size(body_small);
+   color: egeo-get-color(a1);
+}
+
+.sth-dropdown-menu-parent {
+
+   h3 {
+      font-size: egeo-get-font-size(body_xxxsmall);
+      border-bottom: 1px solid egeo-get-color(n3);
+   }
+
+}
+
+.sth-dropdown-menu-item {
+   font-size: egeo-get-font-size(body_xsmall);
+   color: egeo-get-color(n6);
+
+   &:hover {
+      color: egeo-get-color(a1);
+      background-color: egeo-get-color(n1);
+   }
+}
+
