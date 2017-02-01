@@ -56,3 +56,80 @@ $header-background: egeo-get-color(b2) !default;
 .sth-link-label {
    font-size: egeo-get-font-size(head_xxsmall);
 }
+
+.sth-header-border-separator {
+   width: 0;
+   height: 0;
+   border-top: 12px solid transparent;
+   border-right: 12px solid transparent;
+   border-left: 12px solid  egeo-get-color(b2);
+   border-bottom: 12px solid egeo-get-color(b2);
+   position: absolute;
+   left: 0;
+   top: 10px;
+}
+
+.sth-header-user-container {
+   position: relative;
+   float: right;
+   padding-right: 10px;
+   height: 34px;
+   line-height: 34px;
+   min-width: 35px;
+   padding-left: 35px;
+   background-color: egeo-get-color(b1);
+}
+
+.sth-header-submenu-option {
+   color: egeo-get-color(n6);
+   font-family: egeo-get-font(brandon-grotesque);
+   font-size: egeo-get-font-size(head_xxsmall);
+}
+
+.sth-header-submenu-active {
+   border-bottom: 4px solid egeo-get-color(a1);
+   color: egeo-get-color(n8);
+   padding-top: 4px;
+}
+
+.sth-header-submenu-option:nth-child(n+3):before {
+   content: '|';
+   color: egeo-get-color(n4);
+   font-family: egeo-get-font(brandon-grotesque);
+   font-size: egeo-get-font-size(head_xxsmall);
+   position: absolute;
+   left: -10px;
+}
+
+.sth-header-submenu-pointer {
+   border-top-color: egeo-get-color(b2)
+}
+
+.sth-header-user-menu {
+   color: egeo-get-color(n0);
+   font-family: egeo-get-font(open-sans);
+   font-size: egeo-get-font-size(body_xxsmall);
+   font-weight: egeo-get-font-weight(bold);
+}
+
+.sth-header-user-combo-list {
+   background-color: egeo-get-color(n0);
+   font-family: egeo-get-font(open-sans);
+   font-size: egeo-get-font-size(body_xxsmall);
+   font-weight: egeo-get-font-weight(normal);
+   color: egeo-get-color(n7);
+
+   &:before {
+      content:"\A";
+      border-style: solid;
+      border-width: 5px;
+      border-color: transparent transparent egeo-get-color(n0) transparent;
+      position: absolute;
+      top: -10px;
+      right: 7px;
+   }
+}
+
+.sth-header-user-menu-combo-selector {
+   color: egeo-get-color(n7);
+}
