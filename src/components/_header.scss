@@ -3,7 +3,7 @@
 
 $header-background: egeo-get-color(b2) !default;
 
-.sth-header {
+.st-header-menu {
    background-color: $header-background;
 }
 
@@ -132,4 +132,16 @@ $header-background: egeo-get-color(b2) !default;
 
 .sth-header-user-menu-combo-selector {
    color: egeo-get-color(n7);
+}
+
+.sth-header-disable-option {
+   cursor: default;
+   pointer-events: none;
+   color: egeo-get-color(n6, true, 0.5);
+}
+
+.sth-header-submenu-disable-option {
+   cursor: default;
+   pointer-events: none;
+   color: egeo-get-color(n6, true, 0.5);
 }
