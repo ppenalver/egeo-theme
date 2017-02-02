@@ -6,7 +6,14 @@
   "sasslintConfig": ".sass-lint.yml",
   "scripts": {
     "replace": "json -I -f package.json -e",
-    "build": "rimraf egeo-theme-stratio.css && node-sass --include-path scss src/index.scss egeo-theme-stratio.css && postcss --use autoprefixer *.css -d . && cleancss --source-map --output egeo-theme-stratio.min.css egeo-theme-stratio.css",
+    "build": "npm run clean:dist && npm run build:sass && npm run build:postcss && npm run build:cleancss",
+    "build:sass": "npm run build:sass:theme && npm run build:sass:grid",
+    "build:sass:theme": "node-sass --include-path scss src/index.scss egeo-theme-stratio.css",
+    "build:sass:grid": "node-sass --include-path scss src/grid.scss egeo-grid.css",
+    "build:postcss": "postcss --use autoprefixer *.css -d .",
+    "build:cleancss": "npm run build:cleancss:theme && npm run build:cleancss:grid",
+    "build:cleancss:theme": "cleancss --source-map --output egeo-theme-stratio.min.css egeo-theme-stratio.css",
+    "build:cleancss:grid": "cleancss --source-map --output egeo-grid.min.css egeo-grid.css",
     "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
     "clean:dist": "rimraf egeo-theme-stratio.css"
   },
@@ -16,13 +23,13 @@
     "url": "https://github.com/Stratio/ui-fonts"
   },
   "devDependencies": {
-    "autoprefixer": "6.5.1",
+    "autoprefixer": "6.7.2",
     "clean-css": "3.4.20",
     "json": "9.0.4",
-    "node-sass": "4.3.0",
+    "node-sass": "4.5.0",
     "postcss-cli": "2.6.0",
     "rimraf": "2.5.4",
     "sass-lint": "1.10.2",
-    "ui-base": "0.2.0-SNAPSHOT"
+    "egeo-ui-base": "0.4.0-RC1"
   }
 }
