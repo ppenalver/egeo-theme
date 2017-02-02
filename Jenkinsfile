@@ -10,5 +10,6 @@ hose {
     DEV = { config ->
         doCompile(config)
         doDeploy(config)
+        doPackage(config)
     }
 }
