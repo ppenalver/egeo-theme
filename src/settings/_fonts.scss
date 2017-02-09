@@ -6,12 +6,12 @@
 // $egeo-droid-sans-mono: false;
 // $egeo-stratio-icons: false;
 
-$egeo-brandon-grotesque: true !default;
+$egeo-brandon-text: true !default;
 $egeo-droid-sans-mono: true !default;
 $egeo-open-sans: true !default;
 $egeo-stratio-icons: true !default;
 
-@import '../vendors/fonts/brandon-grotesque';
+@import '../vendors/fonts/brandon-text';
 @import '../vendors/fonts/open-sans';
 @import '../vendors/fonts/droid-sans-mono';
 @import '../vendors/fonts/stratio_fonticon';
