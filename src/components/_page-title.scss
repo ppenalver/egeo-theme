@@ -1,0 +1,24 @@
+@import '../../node_modules/egeo-ui-base/utils/typography';
+@import '../../node_modules/egeo-ui-base/utils/colors';
+
+.sth-page-title {
+   border-bottom: 2px solid egeo-get-color(n4);
+}
+
+.sth-page-title-main-title {
+  font-family: egeo-get-font(brandon-grotesque);
+  font-size: egeo-get-font-size(head_xxxlarge);
+  font-weight: egeo-get-font-weight(normal);
+}
+
+.sth-page-title-title {
+  color: egeo-get-color(a3_dark);
+}
+
+.sth-page-title-pre-title {
+   color: egeo-get-color(n5);
+}
+
+.sth-page-title-button-box {
+   border-right: 2px solid egeo-get-color(n4);
+}
