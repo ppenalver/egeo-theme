@@ -20,7 +20,7 @@ $header-background: egeo-get-color(b2) !default;
 }
 
 .sth-app-name {
-   font-family: egeo-get-font('brandon-grotesque');
+   font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_large);
    font-weight: 500;
 }
@@ -30,13 +30,13 @@ $header-background: egeo-get-color(b2) !default;
 }
 
 .sth-company-name {
-   font-family: egeo-get-font('brandon-grotesque');
+   font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
    font-weight: normal;
 }
 
 .sth-option {
-   font-family: egeo-get-font(brandon-grotesque);
+   font-family: egeo-get-font(heading);
    color: egeo-get-color(n6);
 
    &:hover {
@@ -82,7 +82,7 @@ $header-background: egeo-get-color(b2) !default;
 
 .sth-header-submenu-option {
    color: egeo-get-color(n6);
-   font-family: egeo-get-font(brandon-grotesque);
+   font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
 }
 
@@ -95,7 +95,7 @@ $header-background: egeo-get-color(b2) !default;
 .sth-header-submenu-option:nth-child(n+3):before {
    content: '|';
    color: egeo-get-color(n4);
-   font-family: egeo-get-font(brandon-grotesque);
+   font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
    position: absolute;
    left: -10px;
@@ -107,14 +107,14 @@ $header-background: egeo-get-color(b2) !default;
 
 .sth-header-user-menu {
    color: egeo-get-color(n0);
-   font-family: egeo-get-font(open-sans);
+   font-family: egeo-get-font(body);
    font-size: egeo-get-font-size(body_xxsmall);
    font-weight: egeo-get-font-weight(bold);
 }
 
 .sth-header-user-combo-list {
    background-color: egeo-get-color(n0);
-   font-family: egeo-get-font(open-sans);
+   font-family: egeo-get-font(body);
    font-size: egeo-get-font-size(body_xxsmall);
    font-weight: egeo-get-font-weight(normal);
    color: egeo-get-color(n7);

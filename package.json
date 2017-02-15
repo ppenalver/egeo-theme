@@ -30,6 +30,6 @@
     "postcss-cli": "2.6.0",
     "rimraf": "2.5.4",
     "sass-lint": "1.10.2",
-    "egeo-ui-base": "0.4.0"
+    "egeo-ui-base": "1.0.0"
   }
 }
