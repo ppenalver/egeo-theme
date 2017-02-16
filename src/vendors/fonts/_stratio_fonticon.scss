@@ -20,11 +20,11 @@
 @if $egeo-stratio-icons {
     @font-face {
         font-family: 'ico_stratio';
-        src: url('./assets/fonts/stratio-fonticon/ico_stratio.eot');
-        src: url('./assets/fonts/stratio-fonticon/ico_stratio.eot') format('embedded-opentype'),
-        url('./assets/fonts/stratio-fonticon/ico_stratio.ttf') format('truetype'),
-        url('./assets/fonts/stratio-fonticon/ico_stratio.woff') format('woff'),
-        url('./assets/fonts/stratio-fonticon/ico_stratio.svg') format('svg');
+        src: url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.eot');
+        src: url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.eot') format('embedded-opentype'),
+        url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.ttf') format('truetype'),
+        url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.woff') format('woff'),
+        url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.svg') format('svg');
         font-weight: normal;
         font-style: normal;
     }

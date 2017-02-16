@@ -19,11 +19,11 @@
 @if $egeo-droid-sans-mono {
    @font-face {
       font-family: 'DroidSansMonoRegular';
-      src: url('./assets/fonts/droid-sans-mono/droid-sans-mono-webfont.eot');
-      src: url('./assets/fonts/droid-sans-mono/droid-sans-mono-webfont.eot?#iefix') format('embedded-opentype'),
-      url('./assets/fonts/droid-sans-mono/droid-sans-mono-webfont.woff') format('woff'),
-      url('./assets/fonts/droid-sans-mono/droid-sans-mono-webfont.ttf') format('truetype'),
-      url('./assets/fonts/droid-sans-mono/droid-sans-mono-webfont.svg#DroidSansMonoRegular') format('svg');
+      src: url($egeo-fontface-src + '/droid-sans-mono/droid-sans-mono-webfont.eot');
+      src: url($egeo-fontface-src + '/droid-sans-mono/droid-sans-mono-webfont.eot?#iefix') format('embedded-opentype'),
+      url($egeo-fontface-src + '/droid-sans-mono/droid-sans-mono-webfont.woff') format('woff'),
+      url($egeo-fontface-src + '/droid-sans-mono/droid-sans-mono-webfont.ttf') format('truetype'),
+      url($egeo-fontface-src + '/droid-sans-mono/droid-sans-mono-webfont.svg#DroidSansMonoRegular') format('svg');
       font-weight: normal;
       font-style: normal;
    }
