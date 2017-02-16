@@ -6,6 +6,14 @@
    font-weight: egeo-get-font-weight(normal);
    font-size: egeo-get-font-size(body_xsmall);
    color: egeo-get-color(n7);
-   background-color: egeo-get-color(n1)
+   background-color: egeo-get-color(n1);
+
+   &.theme-A {
+      background-color: egeo-get-color(n1)
+   }
+
+   &.theme-B {
+      background-color: egeo-get-color(n0)
+   }
 }
 
