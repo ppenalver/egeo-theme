@@ -1,0 +1,161 @@
+$this: 'sth-button';
+
+.#{$this} {
+   font-family: egeo-get-font(heading);
+   font-size: egeo-get-font-size(body_medium);
+   line-height: 1.5;
+
+   &[disabled] {
+      opacity: .2;
+   }
+
+   &:not([disabled]):active {
+      box-shadow: 0 0 0 2px rgba(55,181,228,1);
+   }
+
+   &--btnMain {
+      text-transform: uppercase;
+
+      &-default,
+      &-subtype1 {
+         border: none;
+         background-color: egeo-get-color(a1);
+         color: egeo-get-color(n0);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(a1_dark);
+         }
+      }
+
+      &-subtype2 {
+         border: none;
+         background-color: egeo-get-color(a2);
+         color: egeo-get-color(n0);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(a2_dark);
+         }
+      }
+
+      &-subtype3 {
+         border: none;
+         background-color: egeo-get-color(a3);
+         color: egeo-get-color(n0);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(a3_dark);
+         }
+      }
+
+      &-subtype4 {
+         background-color: transparent;
+         border: 2px solid egeo-get-color(n4);
+         color: egeo-get-color(n6);
+         text-transform: uppercase;
+
+         &:not([disabled]):hover {
+            border-color: egeo-get-color(n6);
+            color: egeo-get-color(n7);
+         }
+
+         &:not([disabled]):active {
+            background-color: egeo-get-color(n0);
+         }
+      }
+   }
+
+   &--btnLink {
+      background-color: transparent;
+      font-family: egeo-get-font(body);
+      font-size: egeo-get-font-size(body_large);
+
+      &-default,
+      &-subtype1 {
+         color: egeo-get-color(a1);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(n2);
+         }
+      }
+
+      &-subtype2 {
+         color: egeo-get-color(n7);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(n2);
+         }
+      }
+   }
+
+   &--btnTool {
+      font-size: egeo-get-font-size(icon_xsmall);
+
+      &-default,
+      &-subtype1 {
+         background-color: egeo-get-color(n2);
+         color: egeo-get-color(a1);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(a1_light);
+            color: egeo-get-color(n0);
+         }
+      }
+
+      &-subtype2 {
+         background-color: egeo-get-color(n2);
+         color: egeo-get-color(n5);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(a2_dark);
+            color: egeo-get-color(n0);
+         }
+      }
+
+      &-subtype3 {
+         background-color: egeo-get-color(n2);
+         color: egeo-get-color(a3);
+
+         &:not([disabled]):hover {
+            background-color: egeo-get-color(a3_dark);
+            color: egeo-get-color(n0);
+         }
+      }
+
+      &-subtype4 {
+         background-color: transparent;
+         border: 2px solid egeo-get-color(n4);
+         color: egeo-get-color(n6);
+
+         &:not([disabled]):hover {
+            border-color: egeo-get-color(n6);
+            color: egeo-get-color(n7);
+         }
+
+         &:not([disabled]):active {
+            background-color: egeo-get-color(n0);
+         }
+      }
+   }
+
+   &--themeB {
+      &.#{$this}--btnTool {
+         &-default,
+         &-subtype1,
+         &-subtype2,
+         &-subtype3 {
+            border: none;
+            background-color: egeo-get-color(n0);
+         }
+      }
+
+      &.#{$this}--btnLink {
+         &-default,
+         &-subtype1,
+         &-subtype2 {
+            &:not([disabled]):hover {
+               background-color: egeo-get-color(n3);
+            }
+         }
+      }
+   }
+}
