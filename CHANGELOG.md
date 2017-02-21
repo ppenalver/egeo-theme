@@ -2,7 +2,13 @@
 
 ## 0.3.0 (upcoming)
 
-* Pending changelog
+* Add button theme
+* Prevent grid to be written
+* Replace brandon grotesque by brandon text
+* Adapted to new egeo-ui-base version
+* Add new icons
+* Add page-title theme
+* Add dropdown theme
 
 ## 0.2.0 (February 02, 2017)
 
