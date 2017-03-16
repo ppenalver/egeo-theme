@@ -1,6 +1,6 @@
 {
-  "name": "egeo-theme",
-  "version": "",
+  "name": "@stratio/egeo-theme",
+  "version": "0.4.0",
   "license": "Apache-2.0",
   "description": "UI-Fonts library",
   "sasslintConfig": ".sass-lint.yml",
@@ -23,13 +23,13 @@
     "url": "https://github.com/Stratio/ui-fonts"
   },
   "devDependencies": {
+    "@stratio/egeo-ui-base": "1.2.0",
     "autoprefixer": "6.7.2",
     "clean-css": "3.4.20",
     "json": "9.0.4",
     "node-sass": "4.5.0",
     "postcss-cli": "2.6.0",
     "rimraf": "2.5.4",
-    "sass-lint": "1.10.2",
-    "egeo-ui-base": "1.0.0"
+    "sass-lint": "1.10.2"
   }
 }

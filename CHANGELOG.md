@@ -2,7 +2,7 @@
 
 ## 0.4.0 (upcoming)
 
-* Pending changelog
+* Prepare for public release
 
 ## 0.3.0 (February 21, 2017)
 
