@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 0.4.0 (upcoming)
+## 0.4.0 (March 16, 2017)
 
 * Prepare for public release
 
