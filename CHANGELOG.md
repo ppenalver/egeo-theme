@@ -4,6 +4,10 @@
 
 * Pending changelog
 
+## 0.4.1 (March 17, 2017)
+
+* Fix release
+
 ## 0.4.0 (March 16, 2017)
 
 * Prepare for public release
