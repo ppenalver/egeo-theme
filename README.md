@@ -21,8 +21,8 @@ In this repository, you'll find the CSS to put an skin over the Egeo components 
 * [File Structure](#file-structure)
 * [Getting Started](#getting-started)
    * [Dependencies](#dependencies)
-   * [Installing](#work-with-the-code)
-   * [Work with the code](#installing)
+   * [Installing](#installing)
+   * [Work with the code](#work-with-the-code)
    * [How to run](#how-to-run)
    * [How to test](#how-to-test)
    * [How to build](#how-to-build)
@@ -76,7 +76,7 @@ What you need to run this app:
 You can install egeo-theme from npm:
 
 ```
-npm install egeo-theme
+npm i @stratio/egeo-theme
 ```
 
 ### Work with the code
