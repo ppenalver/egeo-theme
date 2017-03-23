@@ -28,6 +28,7 @@
 **Please tell us about your environment:**
 
 - Egeo version: 1.x.x
+- Egeo Theme version: 1.x.x
 - Browser: [all | Chrome XX | Firefox XX | IE XX | Edge XX | Safari XX ]
 
 
