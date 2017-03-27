@@ -23,7 +23,6 @@ In this repository, you'll find the CSS to put an skin over the Egeo components 
    * [Dependencies](#dependencies)
    * [Installing](#installing)
    * [Work with the code](#work-with-the-code)
-   * [How to run](#how-to-run)
    * [How to test](#how-to-test)
    * [How to build](#how-to-build)
 * [Contributing](#contributing)
@@ -46,10 +45,10 @@ egeo-theme/
  │
  ├──src/                           * the theme code
  |   ├──components/                * css rules applied for each Egeo component
- |   ├──settings/                  * settings of the theme
+ |   └──settings/                  * settings of the theme
  |       ├──fonts.scss             * settings to work with fonts
  |       └──index.scss             * to load the whole settings
- |   ├──vendors/                   * 3rd party utilities, font css definitions...
+ |   └──vendors/                   * 3rd party utilities, font css definitions...
  |       └──fonts/                 * fonts used
  |           └──font-name.scss     * each @font-face and css definition 
  |   ├──grid.scss                  * grid generator
@@ -98,22 +97,6 @@ or
 ```
 npm install
 ```
-
-### How to run
-
-If you want to generate the final css, execute:
-
-```
-npm run build
-``` 
-
-or
-
-```
-yarn build
-``` 
-
-This generate four files, theme and grid minified and without minified.
 
 ### How to Test
 
