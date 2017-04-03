@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 0.5.0 (upcoming)
+## 0.5.0 (April 03, 2017)
 
 * Modal Theme
 * Pagination theme
