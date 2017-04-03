@@ -1,0 +1,17 @@
+.sth-pagination {
+   font-family: egeo-get-font(body);
+   background: egeo-get-color(n1);
+
+   &.themeA {
+      background: egeo-get-color(n1);
+   }
+
+   &.themeB {
+      background: egeo-get-color(n0);
+   }
+}
+
+.sth-pagination-pages {
+   font-size: egeo-get-font-size(body_xsmall);
+   color: egeo-get-color(n7)
+}
