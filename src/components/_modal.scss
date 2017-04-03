@@ -1,0 +1,56 @@
+.sth-modal {
+   background-color: egeo-get-color(n10, false, 0.4);
+}
+
+.sth-modal-content {
+   background-color: egeo-get-color(n1);
+   border: 1px solid egeo-get-color(n10, true, 0.2);
+   box-shadow: 0 4px 8px 0 egeo-get-color(n10, true, 0.2), 0 6px 20px 0 egeo-get-color(n10, true, 0.19);
+}
+
+.sth-modal-header {
+   background-color: egeo-get-color(n2);
+   font-family: egeo-get-font(heading);
+   &.st-modal-warning {
+      color: egeo-get-color(s2);
+   }
+   &.st-modal-info {
+      color: egeo-get-color(a1);
+   }
+   &.st-modal-neutral {
+      color: egeo-get-color(n7);
+   }
+}
+
+.sth-modal-close-button {
+   color: egeo-get-color(n7);
+   font-size: egeo-get-font-size(icon_xlarge);
+}
+
+.sth-modal-title {
+   & i {
+      font-size: egeo-get-font-size(icon_large);
+   }
+   & p {
+      font-size: egeo-get-font-size(head_large);
+   }
+}
+
+.sth-modal-body {
+   font-family: egeo-get-font(body);
+   color: egeo-get-color(n8);
+}
+
+.sth-modal-message-big {
+   font-size: egeo-get-font-size(body_xxlarge);
+}
+
+.sth-modal-message-medium {
+   font-size: egeo-get-font-size(body_medium);
+}
+
+.sth-modal-contextual {
+   background-color: egeo-get-color(n3);
+   color: egeo-get-color(n6);
+   font-size: egeo-get-font-size(head_xxsmall);
+}
