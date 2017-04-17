@@ -1,0 +1,51 @@
+.sth-radio {
+   font-size: egeo-get-font-size(body_medium);
+   font-family: egeo-get-font(body);
+
+   &:hover {
+
+      .sth-radio-custom {
+         border-color: egeo-get-color(a1);
+
+         &:before {
+            background: egeo-get-color(a1);
+         }
+      }
+
+   }
+
+   &.disabled {
+      .sth-radio-custom {
+         &:hover {
+            border: 1px solid egeo-get-color(n5);
+         }
+      }
+   }
+}
+
+.sth-radio-custom {
+   background-color: egeo-get-color(n0);
+   border: 1px solid egeo-get-color(n5);
+
+
+   &.checked {
+      border-color: egeo-get-color(n10);
+
+      &:before {
+         background: egeo-get-color(n10);
+      }
+   }
+
+   &.disabled {
+      border-color: egeo-get-color(n5);
+      opacity: 0.9;
+   }
+
+   &:hover {
+      border-color: egeo-get-color(a1);
+
+      &:before {
+         background: egeo-get-color(a1);
+      }
+   }
+}

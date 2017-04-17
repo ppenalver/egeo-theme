@@ -2,7 +2,7 @@
 
 ## 0.6.0 (upcoming)
 
-* Pending changelog
+* Radio Theme
 
 ## 0.5.0 (April 03, 2017)
 
