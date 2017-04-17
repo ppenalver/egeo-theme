@@ -16,7 +16,8 @@
     "build:cleancss:grid": "cleancss --source-map --output egeo-grid.min.css egeo-grid.css",
     "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
     "clean:dist": "rimraf egeo-theme-stratio.css",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "publish": "npm run build && npm publish"
   },
   "author": "Stratio",
   "repository": {
