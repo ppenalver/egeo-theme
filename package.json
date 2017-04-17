@@ -17,7 +17,7 @@
     "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
     "clean:dist": "rimraf egeo-theme-stratio.css",
     "commit": "git-cz",
-    "publish": "npm run build && npm publish"
+    "prepublishOnly": "npm run build"
   },
   "author": "Stratio",
   "repository": {
