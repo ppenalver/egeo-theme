@@ -1,0 +1,30 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-tooltip-content-text {
+   font-size: egeo-get-font-size(body_xxsmall);
+   color: egeo-get-color(n7);
+   background: egeo-get-color(n0);
+   border: 1px solid egeo-get-color(n4);
+   text-align: left;
+   box-shadow: 0 3px 2px 0 egeo-get-color(n10, true, 0.07);
+}
+
+.sth-tooltip-content-text:before {
+   border-top: 6px solid egeo-get-color(n4);
+   border-right: 6px solid transparent;
+   border-left: 6px solid transparent;
+}
+
+.sth-tooltip-content-text:after {
+   border-top: 5px solid egeo-get-color(n0);
+   border-right: 5px solid transparent;
+   border-left: 5px solid transparent;
+}
+
+.sth-tooltip-content-link {
+   text-decoration: none;
+   color: inherit;
+   font-family: inherit;
+   font-size: inherit;
+}

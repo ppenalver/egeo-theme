@@ -1,0 +1,82 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-input-container .sth-input-normal-bar::before,
+.sth-input-container .sth-input-normal-bar::after {
+   background: egeo-get-color(a1);
+   transition: 0.2s ease all;
+}
+
+.sth-input-container .sth-input-error-bar::before,
+.sth-input-container .sth-input-error-bar::after {
+   background: egeo-get-color(s2);
+   transition: 0.2s ease all;
+}
+
+.sth-input-container {
+   border-bottom: 1px solid egeo-get-color(a4);
+}
+
+.sth-input-container ::placeholder {
+   font-family: egeo-get-font(body);
+   color: egeo-get-color(n4);
+   font-weight: egeo-get-font-weight(normal);
+   font-size: egeo-get-font-size(body_large);
+}
+
+.sth-input-container :focus::placeholder {
+   color: transparent;
+}
+
+.sth-input-container.disabled {
+   border-style: dashed;
+   border-color: egeo-get-color(n5);
+}
+
+.sth-input-container.error {
+   border-color: egeo-get-color(s2);
+}
+
+.sth-input-container .sth-input-title.active {
+   color: egeo-get-color(a1);
+}
+
+.sth-input-container .sth-input-title.disabled {
+   color: egeo-get-color(n5);
+}
+
+.sth-input-container .sth-input-title.error {
+   color: egeo-get-color(s2);
+}
+
+.sth-input-container .sth-input-title {
+   font-size: egeo-get-font-size(body_xsmall);
+   font-weight: 400;
+   color: egeo-get-color(a4);
+   text-align: left;
+}
+
+.sth-input-container .sth-input-remove-default {
+   font-size: egeo-get-font-size(body_large);
+   font-weight: egeo-get-font-weight(normal);
+   color: egeo-get-color(n9);
+   background-color: transparent;
+}
+
+.sth-input-container .sth-input-remove-default.disabled {
+   color: egeo-get-color(n7);
+}
+
+.sth-input-remove-default:disabled {
+   background: none;
+}
+
+.sth-input-error-message {
+   font-size: egeo-get-font-size(body_xsmall);
+   font-weight: egeo-get-font-weight(normal);
+   color: egeo-get-color(s2);
+}
+
+.sth-input {
+   font-family: egeo-get-font(body);
+}

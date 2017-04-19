@@ -1,0 +1,24 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-toggle-buttons__description {
+   font-size: egeo-get-font-size("body_xsmall");
+}
+
+.sth-toggle-buttons__tab {
+   color: egeo-get-color(n7);
+   background: egeo-get-color(n2);
+   cursor: pointer;
+   font-size: egeo-get-font-size("body_xsmall");
+}
+
+.sth-toggle-buttons__tab:hover {
+   background: egeo-get-color(n3);
+}
+
+.sth-toggle-buttons__tab--active,
+.sth-toggle-buttons__tab--active:hover {
+   color: egeo-get-color(n0);
+   background: egeo-get-color(n6);
+   cursor: default;
+}

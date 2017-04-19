@@ -1,3 +1,6 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
 .sth-modal {
    background-color: egeo-get-color(n10, false, 0.4);
 }

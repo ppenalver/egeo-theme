@@ -1,0 +1,39 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-search ::placeholder {
+   font-family: egeo-get-font(body);
+   font-weight: egeo-get-font-weight(normal);
+   font-size: egeo-get-font-size(body_medium);
+   color: egeo-get-color(n6);
+}
+
+.sth-search :focus::placeholder {
+   color: transparent;
+}
+
+.sth-search .sth-search-input {
+   font-family: egeo-get-font(body);
+   font-weight: egeo-get-font-weight(normal);
+   font-size: egeo-get-font-size(body_medium);
+   background-color: egeo-get-color(n0);
+   color: egeo-get-color(n7);
+   border: 1px solid egeo-get-color(n3);
+}
+
+.sth-search .sth-search-input:focus {
+   border: 1px solid egeo-get-color(n6);
+}
+
+.sth-search-icon {
+   font-size: egeo-get-font-size(icon_small);
+   color: egeo-get-color(n6);
+}
+
+.sth-search .sth-search-input:focus+.sth-search-icon {
+   color: egeo-get-color(n7);
+}
+
+.sth-search-input:disabled {
+   background: none;
+}

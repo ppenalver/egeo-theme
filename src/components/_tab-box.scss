@@ -1,0 +1,39 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-tab-box-left-shadow {
+   box-shadow: 3px -2px 6px 0px rgba(153, 153, 153, 0.0980392) inset;
+}
+
+.sth-tab-box-right-shadow {
+   box-shadow: -3px -2px 6px 0px rgba(153, 153, 153, 0.0980392) inset;
+}
+
+.sth-tab-box {
+   background: egeo-get-color(n1);
+}
+
+.sth-tab-box__tab {
+   font-family: egeo-get-font(heading);
+   text-transform: uppercase;
+   color: egeo-get-color(n6);
+   font-size: egeo-get-font-size("body_xsmall");
+   background: egeo-get-color(n3);
+   background: linear-gradient(180deg, #e4e4e4 0%, #e4e4e4 74%, #d2d2d2 100%, #d2d2d2 100%);
+}
+
+.sth-tab-box__tab:hover {
+   color: egeo-get-color(n0);
+   background: egeo-get-color(n7);
+   box-shadow: none;
+   box-shadow: none;
+}
+
+.sth-tab-box__tab--active,
+.sth-tab-box__tab--active:hover {
+   box-shadow: none;
+   box-shadow: none;
+   color: egeo-get-color(n9);
+   background: egeo-get-color(n1);
+   cursor: default;
+}

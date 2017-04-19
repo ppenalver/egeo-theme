@@ -1,3 +1,6 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
 .sth-pagination {
    font-family: egeo-get-font(body);
    background: egeo-get-color(n1);
