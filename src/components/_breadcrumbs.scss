@@ -1,0 +1,36 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+$font-family: egeo-get-font(body);
+$text-color: egeo-get-color(a2) !default;
+$text-color---hover: egeo-get-color(n0);
+$text-color---active: egeo-get-color(n10);
+$bg-color---hover: egeo-get-color(a1);
+$font-size: egeo-get-font-size(head_xxsmall) !default;
+
+.sth-breadcrumbs {
+   &__item {
+      font-family: $font-family;
+      color: $text-color;
+      font-size: $font-size;
+
+      &--text {
+         padding: 4px 5px;
+
+         &:hover {
+            color: $text-color---hover;
+            background-color: $bg-color---hover;
+         }
+      }
+
+      &--arrow {
+         margin: 4px 5px;
+      }
+
+      .last & {
+         &--text {
+            color: $text-color---active;
+         }
+      }
+   }
+}

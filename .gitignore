@@ -28,3 +28,4 @@ dist
 *.map
 
 yarn.lock
+.history
