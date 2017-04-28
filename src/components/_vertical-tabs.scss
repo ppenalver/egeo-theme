@@ -2,9 +2,13 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-vertical-tabs__option {
-   border: 1.6px solid egeo-get-color(n3);
+   border-bottom: 1px solid egeo-get-color(n3);
    border-right-width: 0;
    border-left-width: 0;
+}
+
+.sth-vertical-tabs__option:first-child {
+    border-top: 1px solid egeo-get-color(n3);
 }
 
 .sth-vertical-tabs__option__text {
