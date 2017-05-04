@@ -20,16 +20,23 @@
    text-align: left;
    text-transform: uppercase;
    text-decoration: none;
+   &:focus {
+      text-decoration: none;
+      outline: none;
+   }
+   &:hover {
+      text-decoration: none;
+      color: egeo-get-color(n10);
+   }
 }
 
 .sth-vertical-tabs__option__text.sth-vertical-tabs__option--active {
    color: egeo-get-color(n10);
    text-decoration: none;
-}
-
-.sth-vertical-tabs__option__text:hover {
-   text-decoration: none;
-   color: egeo-get-color(n10);
+   &:focus {
+      text-decoration: none;
+      outline: none;
+   }
 }
 
 .sth-vertical-tabs__line {
