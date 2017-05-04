@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.0 (upcoming)
+
+* Pending changelog
+
 ## 0.8.0 (upcoming)
 
 * Theme of textarea
