@@ -2,6 +2,7 @@
 
 ## 0.8.0 (upcoming)
 
+* Theme of textarea
 * Theme of switch
 * Theme of form label
 

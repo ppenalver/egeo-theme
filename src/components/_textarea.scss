@@ -1,0 +1,85 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-textarea-container .sth-textarea-normal-bar::before,
+.sth-textarea-container .sth-textarea-normal-bar::after {
+   background: egeo-get-color(a1);
+   transition: 0.2s ease all;
+}
+
+.sth-textarea-container .sth-textarea-error-bar::before,
+.sth-textarea-container .sth-textarea-error-bar::after {
+   background: egeo-get-color(s2);
+   transition: 0.2s ease all;
+}
+
+.sth-textarea-container {
+   border-bottom: 1px solid egeo-get-color(a4);
+}
+
+.sth-textarea-container ::placeholder {
+   font-family: egeo-get-font(body);
+   color: egeo-get-color(n4);
+   font-weight: egeo-get-font-weight(normal);
+   font-size: egeo-get-font-size(body_large);
+}
+
+.sth-textarea-container :focus::placeholder {
+   color: transparent;
+}
+
+.sth-textarea-container.disabled {
+   border-style: dashed;
+   border-color: egeo-get-color(n5);
+}
+
+.sth-textarea-container.error {
+   border-color: egeo-get-color(s2);
+}
+
+.sth-textarea-container .sth-textarea-title.active {
+   color: egeo-get-color(a1);
+}
+
+.sth-textarea-container .sth-textarea-title.disabled {
+   color: egeo-get-color(n5);
+}
+
+.sth-textarea-container .sth-textarea-title.error {
+   color: egeo-get-color(s2);
+}
+
+.sth-textarea-container .sth-textarea-title {
+   font-size: egeo-get-font-size(body_xsmall);
+   font-weight: 400;
+   color: egeo-get-color(a4);
+   text-align: left;
+}
+
+.sth-textarea-container .sth-textarea-remove-default {
+   font-size: egeo-get-font-size(body_large);
+   font-weight: egeo-get-font-weight(normal);
+   color: egeo-get-color(n9);
+   background-color: egeo-get-color(n0);
+   border-top: 1px solid egeo-get-color(n4);
+   border-left: 1px solid egeo-get-color(n2);
+   border-right: 1px solid egeo-get-color(n2);
+}
+
+.sth-textarea-container .sth-textarea-remove-default.disabled {
+   color: egeo-get-color(n7);
+}
+
+.sth-textarea-remove-default:disabled {
+   background: none;
+}
+
+.sth-textarea-error-message {
+   font-size: egeo-get-font-size(body_xsmall);
+   font-weight: egeo-get-font-weight(normal);
+   color: egeo-get-color(s2);
+}
+
+.sth-textarea {
+   font-family: egeo-get-font(body);
+}
