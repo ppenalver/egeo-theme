@@ -19,23 +19,26 @@
    font-weight: 400;
    text-align: left;
    text-transform: uppercase;
+   text-decoration: none;
 }
 
 .sth-vertical-tabs__option__text.sth-vertical-tabs__option--active {
    color: egeo-get-color(n10);
+   text-decoration: none;
 }
 
 .sth-vertical-tabs__option__text:hover {
+   text-decoration: none;
    color: egeo-get-color(n10);
 }
 
 .sth-vertical-tabs__line {
-   border-left: 1.6px solid egeo-get-color(n4);
+   border-left: 1px solid egeo-get-color(n4);
 }
 
 .sth-vertical-tabs__line__arrow {
    background-color: egeo-get-color(n0);
-   border: 1.6px solid egeo-get-color(n6);
+   border: 1px solid egeo-get-color(n6);
    border-bottom-width: 0;
    border-left-width: 0;
    transition: margin-top 0.4s;
