@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 0.8.0 (upcoming)
+## 0.8.0 (May 04, 2017)
 
 * Theme of textarea
 * Theme of switch
