@@ -38,6 +38,7 @@ $header-background: egeo-get-color(b2) !default;
 .sth-option {
    font-family: egeo-get-font(heading);
    color: egeo-get-color(n6);
+   outline: none;
 
    &:hover {
       color: egeo-get-color(b3);
@@ -84,6 +85,7 @@ $header-background: egeo-get-color(b2) !default;
    color: egeo-get-color(n6);
    font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
+   outline: none;
 }
 
 .sth-header-submenu-active {

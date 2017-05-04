@@ -1,6 +1,6 @@
 {
   "name": "@stratio/egeo-theme",
-  "version": "0.5.0",
+  "version": "0.8.0",
   "license": "Apache-2.0",
   "description": "UI-Fonts library",
   "sasslintConfig": ".sass-lint.yml",
