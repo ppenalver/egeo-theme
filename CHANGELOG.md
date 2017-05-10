@@ -2,7 +2,7 @@
 
 ## 0.9.0 (upcoming)
 
-* Pending changelog
+* Theme of checkbox
 
 ## 0.8.1 (May 04, 2017)
 

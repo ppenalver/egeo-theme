@@ -1,0 +1,28 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-checkbox {
+   .sth-checkbox-custom {
+      border: 1px solid egeo-get-color(n5);
+
+      &:hover {
+         border-color: egeo-get-color(a1);
+      }
+   }
+
+   &.disabled {
+      opacity: .5;
+      cursor: default;
+
+      .sth-checkbox-custom {
+         &:hover {
+            border-color: egeo-get-color(n5);
+         }
+      }
+   }
+
+   .sth-checkbox-label {
+      font-family: egeo-get-font(body);
+      font-size: egeo-get-font-size(body_medium);
+   }
+}
