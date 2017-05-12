@@ -1,0 +1,34 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-two-list__list-item {
+   border-bottom: 1px solid egeo-get-color(n3);
+}
+
+.sth-two-list__list-title {
+   font-weight: egeo-get-font-weight(bold);
+   font-family: egeo-get-font(body);
+   font-size: egeo-get-font-size(body_large);
+   color: egeo-get-color(n6);
+   &.sth-two-list__important-title {
+      color: egeo-get-color(n7);
+   }
+}
+
+.sth-two-list {
+   font-family: egeo-get-font(body);
+   font-size: egeo-get-font-size(body_medium);
+   color: egeo-get-color(n7);
+}
+
+.sth-two-list__list {
+   background-color: egeo-get-color(n0);
+}
+
+.sth-two-list__all-list {
+   border: 1px solid egeo-get-color(n2);
+}
+
+.sth-two-list__selected-list {
+   border: 1px solid egeo-get-color(n5);
+}
