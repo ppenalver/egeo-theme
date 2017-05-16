@@ -32,3 +32,11 @@
 .sth-two-list__selected-list {
    border: 1px solid egeo-get-color(n5);
 }
+
+.sth-two-list-selection__item-normal {
+   font-size: egeo-get-font-size(body_small);
+}
+
+.sth-two-list-selection__item-compact {
+   font-size: egeo-get-font-size(body_xsmall);
+}
