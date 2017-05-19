@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 0.9.0 (upcoming)
+## 0.9.0 (May 19, 2017)
 
 * Theme of checkbox
 * Theme of two-list
