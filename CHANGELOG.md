@@ -3,6 +3,7 @@
 ## 0.9.0 (upcoming)
 
 * Theme of checkbox
+* Theme of two-list
 
 ## 0.8.1 (May 04, 2017)
 
