@@ -8,3 +8,19 @@
 .sth-form-label.active {
    color: egeo-get-color(a1);
 }
+
+.sth-form-label__label--top {
+   font-size: egeo-get-font-size(body_xsmall);
+}
+
+.sth-form-label__label--right {
+   font-size: egeo-get-font-size(body_large);
+}
+
+.sth-form-label__label--left {
+   font-size: egeo-get-font-size(body_large);
+}
+
+.sth-form-label {
+   font-family: egeo-get-font(body);
+}
