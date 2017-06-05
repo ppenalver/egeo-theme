@@ -2,7 +2,8 @@
 
 ## 0.10.0 (upcoming)
 
-* Pending changelog
+* Fix form label
+* Update dependency with egeo-ui-base
 
 ## 0.9.0 (May 19, 2017)
 
