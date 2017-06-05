@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.11.0 (upcoming)
+
+* Pending changelog
+
 ## 0.10.0 (upcoming)
 
 * Fix form label
