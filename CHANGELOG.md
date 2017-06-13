@@ -3,6 +3,7 @@
 ## 0.11.0 (upcoming)
 
 * Theme of radio menu
+* Update theme of page title with editable option
 
 ## 0.10.0 (June 05, 2017)
 

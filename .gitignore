@@ -28,4 +28,5 @@ dist
 *.map
 
 yarn.lock
+package-lock.json
 .history

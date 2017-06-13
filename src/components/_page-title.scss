@@ -24,3 +24,26 @@
 .sth-page-title-button-box {
    border-right: 2px solid egeo-get-color(n4);
 }
+
+
+.sth-error {
+   border-color: egeo-get-color(s3) !important;
+}
+
+.sth-error-text {
+   font-size: 13px;
+   color: egeo-get-color(s3);
+}
+
+.sth-button-edit {
+   color: egeo-get-color(n6);
+}
+
+.sth-editable {
+   .sth-page-title-title {
+      &:hover {
+         border-color: egeo-get-color(n3)
+      }
+   }
+}
+
