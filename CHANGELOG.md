@@ -2,7 +2,7 @@
 
 ## 0.11.0 (upcoming)
 
-* Pending changelog
+* Theme of radio menu
 
 ## 0.10.0 (June 05, 2017)
 

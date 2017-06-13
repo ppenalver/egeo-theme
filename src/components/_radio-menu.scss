@@ -1,0 +1,69 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-radio-menu-option {
+   font-family: egeo-get-font(body);
+   color: egeo-get-color(n7);
+
+   &.active {
+      color: egeo-get-color(n9);
+      background-color: egeo-get-color(n1);
+
+      &:after {
+         border-left: 60px solid egeo-get-color(n1);
+      }
+
+      &:before {
+         background-color: egeo-get-color(n1);
+      }
+   }
+
+   &.no-active {
+      color: egeo-get-color(n4);
+   }
+}
+
+.theme-gray-1 {
+   .sth-radio-menu-option {
+      &.active {
+         background-color: egeo-get-color(n2);
+
+         &:after {
+            border-left: 60px solid egeo-get-color(n2);
+         }
+
+         &:before {
+            background-color: egeo-get-color(n2);
+         }
+      }
+
+      &.no-active {
+         color: egeo-get-color(n5);
+      }
+   }
+}
+
+.theme-gray-2 {
+   .sth-radio-menu-option {
+
+      background-color: egeo-get-color(n0);
+      &.active {
+         background-color: egeo-get-color(n1);
+
+         &:after {
+            border-left: 60px solid egeo-get-color(n1);
+         }
+
+         &:before {
+            background-color: egeo-get-color(n1);
+         }
+      }
+
+      &.no-active {
+         color: egeo-get-color(n4);
+      }
+   }
+}
+
+
+
