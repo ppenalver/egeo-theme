@@ -3,6 +3,7 @@
 ## 0.12.0 (upcoming)
 
 * Theme of tip
+* Theme of help
 
 ## 0.11.0 (June 13, 2017)
 

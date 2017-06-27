@@ -1,0 +1,16 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-help {
+   background-color: egeo-get-color(n0);
+   border: 1px solid egeo-get-color(n3);
+   &__icon {
+      font-size: egeo-get-font-size(icon_large);
+      color: egeo-get-color(n4);
+   }
+   &__text {
+      font-family: egeo-get-font(body);
+      font-size: egeo-get-font-size(body_xxsmall);
+      color: egeo-get-color(n7);
+   }
+}
