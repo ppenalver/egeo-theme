@@ -2,7 +2,7 @@
 
 ## 0.12.0 (upcoming)
 
-* Pending changelog
+* Theme of tip
 
 ## 0.11.0 (June 13, 2017)
 
