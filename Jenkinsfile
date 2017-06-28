@@ -6,7 +6,7 @@ hose {
     DEVTIMEOUT = 30
     RELEASETIMEOUT = 30
     REPOSITORY = 'github.com/egeo-theme'
-    FOSS = 'true'
+    FOSS = true
 
     DEV = { config ->
         doCompile(config)
