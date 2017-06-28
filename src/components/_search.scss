@@ -8,10 +8,6 @@
    color: egeo-get-color(n6);
 }
 
-.sth-search :focus::placeholder {
-   color: transparent;
-}
-
 .sth-search .sth-search-input {
    font-family: egeo-get-font(body);
    font-weight: egeo-get-font-weight(normal);
