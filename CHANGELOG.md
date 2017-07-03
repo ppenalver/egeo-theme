@@ -2,7 +2,7 @@
 
 ## 0.13.0 (upcoming)
 
-* Pending changelog
+* Theme of items list
 
 ## 0.12.0 (June 28, 2017)
 
