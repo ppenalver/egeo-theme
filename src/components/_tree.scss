@@ -1,0 +1,16 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-tree-node {
+   &-filetype {
+      color: egeo-get-color(n7);
+      font-size: egeo-get-font-size(icon_xxsmall);
+      text-align: right;
+   }
+   &-name {
+      font-family: egeo-get-font(body);
+      font-size: egeo-get-font-size(body_xsmall);
+      text-align: left;
+      color: egeo-get-color(n7);
+   }
+}
