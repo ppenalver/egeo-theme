@@ -18,32 +18,32 @@
 
 // sass-lint:disable indentation, no-duplicate-properties, no-vendor-prefixes, class-name-format, leading-zero, no-color-literals
 @if $egeo-stratio-icons {
-    @font-face {
-        font-family: 'ico_stratio';
-        src: url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.eot');
-        src: url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.eot') format('embedded-opentype'),
-        url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.ttf') format('truetype'),
-        url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.woff') format('woff'),
-        url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.svg') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
+   @font-face {
+      font-family: 'ico_stratio';
+      src: url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.eot');
+      src: url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.eot') format('embedded-opentype'),
+      url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.ttf') format('truetype'),
+      url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.woff') format('woff'),
+      url($egeo-fontface-src + '/stratio-fonticon/ico_stratio.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
 
-    [class^="icon-"],
-    [class*=" icon-"] {
-        /* use !important to prevent issues with browser extensions that change fonts */
-        font-family: 'ico_stratio' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
+   [class^="icon-"],
+   [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'ico_stratio' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
 
-        /* Better Font Rendering =========== */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+   }
 
    .icon-dot:before {
    content: "\e622";
@@ -63,6 +63,9 @@
    .icon-merge:before {
    content: "\e94e";
    }
+   .icon-tube:before {
+   content: "\e927";
+   }
    .icon-channel:before {
    content: "\e94f";
    }
@@ -77,6 +80,9 @@
    }
    .icon-modules:before {
    content: "\e930";
+   }
+   .icon-omni:before {
+   content: "\e963";
    }
    .icon-evolution:before {
    content: "\e938";
@@ -96,14 +102,20 @@
    .icon-a-b:before {
    content: "\e92f";
    }
+   .icon-transport:before {
+   content: "\e628";
+   }
+   .icon-desktop:before {
+   content: "\e928";
+   }
+   .icon-laptop:before {
+   content: "\e936";
+   }
    .icon-cpu:before {
    content: "\e627";
    }
    .icon-server:before {
    content: "\e937";
-   }
-   .icon-transport:before {
-   content: "\e628";
    }
    .icon-chip1:before {
    content: "\e62d";
@@ -116,6 +128,12 @@
    }
    .icon-filter:before {
    content: "\e616";
+   }
+   .icon-facets:before {
+   content: "\e961";
+   }
+   .icon-facets2:before {
+   content: "\e962";
    }
    .icon-sand-clock:before {
    content: "\e617";
@@ -183,11 +201,23 @@
    .icon-pacman:before {
    content: "\e93f";
    }
+   .icon-planet:before {
+   content: "\e96c";
+   }
    .icon-coffe:before {
    content: "\e907";
    }
    .icon-fire:before {
    content: "\e946";
+   }
+   .icon-car:before {
+   content: "\e95f";
+   }
+   .icon-bike:before {
+   content: "\e969";
+   }
+   .icon-home:before {
+   content: "\e96a";
    }
    .icon-bulb:before {
    content: "\e934";
@@ -200,6 +230,12 @@
    }
    .icon-mobile:before {
    content: "\e93b";
+   }
+   .icon-machine_learning:before {
+   content: "\e96d";
+   }
+   .icon-robot:before {
+   content: "\e96e";
    }
    .icon-intelligence:before {
    content: "\e93c";
@@ -227,6 +263,12 @@
    }
    .icon-map:before {
    content: "\e072";
+   }
+   .icon-deepweb:before {
+   content: "\e964";
+   }
+   .icon-hide:before {
+   content: "\e960";
    }
    .icon-hand_thumbup:before {
    content: "\e932";
@@ -327,6 +369,9 @@
    .icon-compass:before {
    content: "\e60d";
    }
+   .icon-rudder:before {
+   content: "\e96f";
+   }
    .icon-storage:before {
    content: "\e607";
    }
@@ -400,9 +445,6 @@
    content: "\e612";
    }
    .icon-edit:before {
-   content: "\e63c";
-   }
-   .icon-edit2:before {
    content: "\e63c";
    }
    .icon-mail:before {
@@ -638,6 +680,9 @@
    }
    .icon-circle-minus:before {
    content: "\e041";
+   }
+   .icon-checkbox:before {
+   content: "\e96b";
    }
    .icon-square-plus:before {
    content: "\e044";
@@ -930,13 +975,25 @@
    .icon-cassandra:before {
    content: "\e62f";
    }
+   .icon-lego:before {
+   content: "\e904";
+   }
+   .icon-postgres:before {
+   content: "\e968";
+   }
    .icon-twitter:before {
    content: "\e637";
    }
    .icon-twitterjson:before {
    content: "\e637";
    }
-   .icon-lego:before {
-   content: "\e904";
+   .icon-linkedin:before {
+   content: "\e965";
+   }
+   .icon-youtube:before {
+   content: "\e966";
+   }
+   .icon-slideshare:before {
+   content: "\e967";
    }
 }

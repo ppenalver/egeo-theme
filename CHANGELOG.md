@@ -3,6 +3,8 @@
 ## 0.13.0 (upcoming)
 
 * Theme of items list
+* Theme for tree
+* Update stratio icons font
 
 ## 0.12.0 (June 28, 2017)
 
