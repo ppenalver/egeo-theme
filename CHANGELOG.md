@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 0.13.0 (upcoming)
+## 0.13.0 (July 12, 2017)
 
 * Theme of items list
 * Theme for tree
