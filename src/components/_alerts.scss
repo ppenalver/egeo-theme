@@ -1,0 +1,63 @@
+@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+
+.sth-alert-box {
+   width: 100%;
+   color: egeo-get-color(n0);
+   font-family: egeo-get-font(body);
+   min-height: 100px;
+   display: block;
+   position: relative;
+
+   &-success {
+      background: egeo-get-color(s1_dark);
+   }
+
+   &-warning {
+      background: egeo-get-color(s2_dark);
+   }
+
+   &-error {
+      background: egeo-get-color(s3_dark);
+   }
+
+   .sth-alert-box-close-button {
+      font-size: egeo-get-font-size(icon_xlarge);
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      cursor: pointer;
+   }
+
+   .sth-alert-box-ico-type {
+      position: absolute;
+      top: 23px;
+      left: 20px;
+      height: 16px;
+      width: 16px;
+      line-height: 16px;
+      font-size: egeo-get-font-size(icon_xsmall);
+   }
+
+   &-message {
+      padding: 20px 50px 30px 40px;
+      text-align: left;
+      &-header {
+         font-size: egeo-get-font-size(body_large);
+         font-weight: egeo-get-font-weight(bold);
+         margin-bottom: 10px;
+         &-title {
+            height: 22px;
+            line-height: 22px;
+         }
+      }
+      &-body {
+         font-size: egeo-get-font-size(body_small);
+         line-height: 1.29;
+      }
+      &-footer {
+         text-decoration: underline;
+         cursor: pointer;
+      }
+   }
+}
