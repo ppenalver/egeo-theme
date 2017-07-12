@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.14.0 (upcoming)
+
+* Pending changelog
+
 ## 0.13.0 (upcoming)
 
 * Theme of items list
