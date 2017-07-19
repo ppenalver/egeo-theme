@@ -1,149 +1,187 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
-$header-background: egeo-get-color(b2) !default;
-
-.st-header-menu {
-   background-color: $header-background;
+.sth-header {
+   background-color: egeo-get-color(b2);
 }
 
-.sth-header-border {
-   background-color: egeo-get-color(b1);
+.sth-header-app {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
 }
 
-.sth-sub-menu {
-   background-color: egeo-get-color(b3);
-}
-
-.sth-app {
+.sth-header-app-name {
    color: egeo-get-color(n0);
-}
-
-.sth-app-name {
    font-family: egeo-get-font(heading);
-   font-size: egeo-get-font-size(head_large);
+   font-size: egeo-get-font-size(head_xlarge);
    font-weight: 500;
+   height: 27px;
+   line-height: 27px;
+   text-align: left;
 }
 
-.sth-logo {
-   font-size: 48px;
+.sth-header-app-logo {
+   color: egeo-get-color(n3);
+   font-size: 28px;
+   margin-right: 10px;
 }
 
-.sth-company-name {
+.sth-header-menu {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-content: flex-end;
+
+   .sth-header-menu-item {
+      padding: 0px 15px;
+   }
+}
+
+.sth-header-menu-option {
+   color: egeo-get-color(n6);
    font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
-   font-weight: normal;
-}
-
-.sth-option {
-   font-family: egeo-get-font(heading);
-   color: egeo-get-color(n6);
-   outline: none;
+   line-height: 15px;
+   text-align: left;
+   height: 15px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-content: flex-end;
 
    &:hover {
-      color: egeo-get-color(b3);
-      transition: all .3s ease-in-out;
+      color: egeo-get-color(n0);
+   }
+   &.active {
+      color: egeo-get-color(n0);
+   }
+
+
+
+   .sth-header-menu-option-name {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: flex-end;
+      text-decoration: none;
+      color: inherit;
+
+      .sth-header-menu-option-icon {
+         width: 15px;
+         height: 15px;
+         font-size: egeo-get-font-size(icon_xsmall);
+         line-height: 15px;
+         text-align: left;
+         margin-right: 8px;
+         align-self: flex-end;
+      }
+
+      .sth-header-menu-option-label {
+         height: 15px;
+         line-height: 15px;
+         text-align: left;
+         white-space: nowrap;
+         align-self: flex-end;
+      }
+   }
+
+
+   .sth-header-menu-option-arrow {
+      margin-left: 10px;
+      width: 10px;
+      height: 15px;
+      font-size: egeo-get-font-size(icon_xxxsmall);
+      line-height: 15px;
+      text-align: left;
+      align-self: flex-end;
    }
 }
 
-.sth-active {
-   color: egeo-get-color(b3);
+.sth-header-user-menu-combo {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-content: flex-end;
+   color: egeo-get-color(n2);
+
+   & .sth-header-user-menu-ico {
+      margin-left: 15px;
+      font-size: egeo-get-font-size(icon_xxsmall);
+      line-height: 13px;
+      text-align: left;
+      margin-right: 7px;
+   }
+
+   & .sth-header-user-menu-name {
+      font-family: egeo-get-font(body);
+      font-size: egeo-get-font-size(body_xsmall);
+      line-height: 13px;
+      text-align: left;
+      margin-right: 10px;
+      white-space: nowrap;
+   }
+
+   & .sth-header-user-menu-arrow {
+      font-size: egeo-get-font-size(icon_xxxsmall);
+      line-height: 11px;
+      text-align: left;
+   }
 }
 
-.sth-link-icon {
-   font-size: egeo-get-font-size(icon_xsmall);
-}
-
-.sth-link-label {
-   font-size: egeo-get-font-size(head_xxsmall);
-}
-
-.sth-header-border-separator {
-   width: 0;
-   height: 0;
-   border-top: 12px solid transparent;
-   border-right: 12px solid transparent;
-   border-left: 12px solid  egeo-get-color(b2);
-   border-bottom: 12px solid egeo-get-color(b2);
-   position: absolute;
+.sth-header {
+   position: fixed;
+   width: 100%;
    left: 0;
-   top: 10px;
-}
+   right: 0;
+   top: 0;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-content: flex-end;
+   transition: height 0.5s;
 
-.sth-header-user-container {
-   position: relative;
-   float: right;
-   padding-right: 10px;
-   height: 34px;
-   line-height: 34px;
-   min-width: 35px;
-   padding-left: 35px;
-   background-color: egeo-get-color(b1);
-}
+   .sth-header-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      padding-bottom: 10px;
+      width: 100%;
+      margin: 0 auto;
 
-.sth-header-submenu-option {
-   color: egeo-get-color(n6);
-   font-family: egeo-get-font(heading);
-   font-size: egeo-get-font-size(head_xxsmall);
-   outline: none;
-}
+      .sth-header-container-fix-part {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         align-items: flex-end;
 
-.sth-header-submenu-active {
-   border-bottom: 4px solid egeo-get-color(a1);
-   color: egeo-get-color(n8);
-   padding-top: 4px;
-}
-
-.sth-header-submenu-option:nth-child(n+3):before {
-   content: '|';
-   color: egeo-get-color(n4);
-   font-family: egeo-get-font(heading);
-   font-size: egeo-get-font-size(head_xxsmall);
-   position: absolute;
-   left: -10px;
-}
-
-.sth-header-submenu-pointer {
-   border-top-color: egeo-get-color(b2)
-}
-
-.sth-header-user-menu {
-   color: egeo-get-color(n0);
-   font-family: egeo-get-font(body);
-   font-size: egeo-get-font-size(body_xxsmall);
-   font-weight: egeo-get-font-weight(bold);
-}
-
-.sth-header-user-combo-list {
-   background-color: egeo-get-color(n0);
-   font-family: egeo-get-font(body);
-   font-size: egeo-get-font-size(body_xxsmall);
-   font-weight: egeo-get-font-weight(normal);
-   color: egeo-get-color(n7);
-
-   &:before {
-      content:"\A";
-      border-style: solid;
-      border-width: 5px;
-      border-color: transparent transparent egeo-get-color(n0) transparent;
-      position: absolute;
-      top: -10px;
-      right: 7px;
+         .sth-header-app-component {
+            height: 35px;
+            margin: 0 30px;
+            display: flex;
+         }
+         .sth-header-menu-component {
+            display: flex;
+            align-items: flex-end;
+            height: 35px;
+            margin-bottom: 10px;
+         }
+      }
    }
-}
 
-.sth-header-user-menu-combo-selector {
-   color: egeo-get-color(n7);
-}
 
-.sth-header-disable-option {
-   cursor: default;
-   pointer-events: none;
-   color: egeo-get-color(n6, true, 0.5);
-}
+   .sth-header-user-menu-container {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-end;
+      justify-content: flex-end;
+      align-self: flex-end;
+      flex: 1;
 
-.sth-header-submenu-disable-option {
-   cursor: default;
-   pointer-events: none;
-   color: egeo-get-color(n6, true, 0.5);
+      .sth-header-user-menu-component {
+         margin-right: 30px;
+         margin-bottom: 10px;
+      }
+   }
 }
