@@ -2,7 +2,7 @@
 
 ## 0.14.0 (upcoming)
 
-* Refactor header to adapt new Design and UX
+* Pending changelog
 
 ## 0.13.0 (July 12, 2017)
 
