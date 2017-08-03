@@ -1,164 +1,210 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
-$this: 'sth-button';
+$this: 'button';
 
 .#{$this} {
-   font-family: egeo-get-font(heading);
-   font-size: egeo-get-font-size(body_medium);
-   line-height: 1.5;
+   & {
+      box-sizing: border-box;
+      cursor: pointer;
+      outline: none;
+      font-family: egeo-get-font(body);
+      font-size: egeo-get-font-size(body_small);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      vertical-align: middle;
+   }
+
+   i {
+      font-family: egeo-get-font(icon);
+      font-size: egeo-get-font-size(icon_xsmall);
+      vertical-align: middle;
+   }
 
    &[disabled] {
+      cursor:default;
       opacity: .2;
    }
 
-   &:not([disabled]):active {
-      box-shadow: 0 0 0 2px rgba(55,181,228,1);
-   }
-
-   &--btnMain {
+   &.button-sq1,
+   &.button-sq2,
+   &.button-sq3,
+   &.button-sq4 {
+      outline: none;
+      color: egeo-get-color(n0);
+      padding: 5px 20px;
       text-transform: uppercase;
-
-      &-default,
-      &-subtype1 {
-         border: none;
-         background-color: egeo-get-color(a1);
-         color: egeo-get-color(n0);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(a1_dark);
-         }
+      &:not([disabled]):hover {
+         cursor: pointer;
       }
-
-      &-subtype2 {
-         border: none;
-         background-color: egeo-get-color(a2);
-         color: egeo-get-color(n0);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(a2_dark);
-         }
+      &:active {
+         border: solid 3px egeo-get-color(a1);
+         margin:-3px 0 -3px -3px;
       }
+   }
 
-      &-subtype3 {
-         border: none;
+   &.block {
+      width: 100%;
+      &:active {
+         box-sizing: content-box;
+         width: calc(100% - 40px)
+      }
+   }
+
+   &.button-sq1 {
+      background-color: egeo-get-color(a1);
+      &:not([disabled]):hover {
+         background-color: egeo-get-color(a1_dark)
+      }
+   }
+
+   &.button-sq2 {
+      background-color: egeo-get-color(a2);
+      &:not([disabled]):hover {
+         background-color: egeo-get-color(a2_dark)
+      }
+   }
+
+   &.button-sq3 {
+      background-color: egeo-get-color(a3);
+      &:not([disabled]):hover {
+         background-color: egeo-get-color(a3_dark)
+      }
+   }
+
+   &.button-sq4 {
+      box-shadow: 0 0 0 3px egeo-get-color(a2);
+      border: none;
+      padding: 2px 20px;
+      color: egeo-get-color(a2);
+      &:not([disabled]):hover {
+         box-shadow: 0 0 0 3px egeo-get-color(a2_dark);
+         color: egeo-get-color(a2_dark);
+      }
+      &:not([disabled]):active {
+         box-shadow: 0 0 0 3px egeo-get-color(a1);
+         border: solid 3px egeo-get-color(a2_dark);
+      }
+   }
+
+   &.button-lk1,
+   &.button-lk2,
+   &.button-lk3,
+   &.button-lk4 {
+      color: egeo-get-color(n0);
+      padding: 8px 20px;
+
+      &:active {
+         border: solid 3px egeo-get-color(a1);
+         margin:-3px 0 -3px -3px;
+      }
+   }
+
+   &.button-lk1,
+   &.button-lk3 {
+      color: egeo-get-color(a1);
+   }
+
+   &.button-lk2,
+   &.button-lk4 {
+      color: egeo-get-color(a2_dark);
+   }
+
+   &.button-lk1:not([disabled]):hover,
+   &.button-lk2:not([disabled]):hover {
+      background-color: egeo-get-color(n2);
+   }
+
+   &.button-lk3:not([disabled]):hover,
+   &.button-lk4:not([disabled]):hover {
+      background-color: egeo-get-color(n3);
+   }
+
+   &.button-rd1,
+   &.button-rd2,
+   &.button-rd3,
+   &.button-rd4,
+   &.button-rd5,
+   &.button-rd6,
+   &.button-rd7 {
+      background-color: #ccc;
+      border-radius: 100%;
+      font-size: egeo-get-font-size(body_small);
+      height: 35px;
+
+      i {
+         margin: 10px;
+         display: inline-block;
+      }
+      &:hover {
+         color: egeo-get-color(n0);
+      }
+      &:active {
+         box-shadow: 0 0 0 2px egeo-get-color(a1);
+      }
+   }
+
+   &.button-rd1 {
+      background-color: egeo-get-color(n1);
+      color: egeo-get-color(a1);
+      &:hover {
+         background-color: egeo-get-color(a1_light);
+      }
+   }
+
+   &.button-rd2 {
+      background-color: egeo-get-color(n2);
+      color: egeo-get-color(a2_dark);
+      &:hover {
+         background-color: egeo-get-color(a2_dark);
+      }
+   }
+
+   &.button-rd3 {
+      background-color: egeo-get-color(n2);
+      color: egeo-get-color(a3);
+      &:hover {
          background-color: egeo-get-color(a3);
-         color: egeo-get-color(n0);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(a3_dark);
-         }
-      }
-
-      &-subtype4 {
-         background-color: transparent;
-         border: 2px solid egeo-get-color(n4);
-         color: egeo-get-color(n6);
-         text-transform: uppercase;
-
-         &:not([disabled]):hover {
-            border-color: egeo-get-color(n6);
-            color: egeo-get-color(n7);
-         }
-
-         &:not([disabled]):active {
-            background-color: egeo-get-color(n0);
-         }
       }
    }
 
-   &--btnLink {
+   &.button-rd4 {
+      background-color: egeo-get-color(n0);
+      color: egeo-get-color(a1);
+      &:hover {
+         background-color: egeo-get-color(a1_light);
+      }
+   }
+
+   &.button-rd5 {
+      background-color: egeo-get-color(n0);
+      color: egeo-get-color(a2_dark);
+      &:hover {
+         background-color: egeo-get-color(a2_dark);
+      }
+   }
+
+   &.button-rd6 {
+      background-color: egeo-get-color(n0);
+      color: egeo-get-color(a3);
+      &:hover {
+         background-color: egeo-get-color(a3);
+      }
+   }
+
+   &.button-rd7 {
       background-color: transparent;
-      font-family: egeo-get-font(body);
-      font-size: egeo-get-font-size(body_large);
-
-      &-default,
-      &-subtype1 {
-         color: egeo-get-color(a1);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(n2);
-         }
-      }
-
-      &-subtype2 {
+      border: solid 2px egeo-get-color(n6);
+      color: egeo-get-color(n6);
+      &:hover {
+         border: solid 2px egeo-get-color(n7);
          color: egeo-get-color(n7);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(n2);
-         }
+      }
+      i {
+         margin: 7px 10px;
       }
    }
 
-   &--btnTool {
-      font-size: egeo-get-font-size(icon_xsmall);
-
-      &-default,
-      &-subtype1 {
-         background-color: egeo-get-color(n2);
-         color: egeo-get-color(a1);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(a1_light);
-            color: egeo-get-color(n0);
-         }
-      }
-
-      &-subtype2 {
-         background-color: egeo-get-color(n2);
-         color: egeo-get-color(n5);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(a2_dark);
-            color: egeo-get-color(n0);
-         }
-      }
-
-      &-subtype3 {
-         background-color: egeo-get-color(n2);
-         color: egeo-get-color(a3);
-
-         &:not([disabled]):hover {
-            background-color: egeo-get-color(a3_dark);
-            color: egeo-get-color(n0);
-         }
-      }
-
-      &-subtype4 {
-         background-color: transparent;
-         border: 2px solid egeo-get-color(n4);
-         color: egeo-get-color(n6);
-
-         &:not([disabled]):hover {
-            border-color: egeo-get-color(n6);
-            color: egeo-get-color(n7);
-         }
-
-         &:not([disabled]):active {
-            background-color: egeo-get-color(n0);
-         }
-      }
-   }
-
-   &--themeB {
-      &.#{$this}--btnTool {
-         &-default,
-         &-subtype1,
-         &-subtype2,
-         &-subtype3 {
-            border: none;
-            background-color: egeo-get-color(n0);
-         }
-      }
-
-      &.#{$this}--btnLink {
-         &-default,
-         &-subtype1,
-         &-subtype2 {
-            &:not([disabled]):hover {
-               background-color: egeo-get-color(n3);
-            }
-         }
-      }
-   }
 }

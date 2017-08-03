@@ -2,7 +2,7 @@
 
 ## 0.14.0 (upcoming)
 
-* Pending changelog
+* Removed st-button and define new button classes
 
 ## 0.13.0 (July 12, 2017)
 
