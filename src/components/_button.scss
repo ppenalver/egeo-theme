@@ -75,16 +75,16 @@ $this: 'button';
    }
 
    &.button-sq4 {
-      box-shadow: 0 0 0 3px egeo-get-color(a2);
+      box-shadow: 0 0 0 2px egeo-get-color(a2);
       border: none;
       padding: 2px 20px;
       color: egeo-get-color(a2);
       &:not([disabled]):hover {
-         box-shadow: 0 0 0 3px egeo-get-color(a2_dark);
+         box-shadow: 0 0 0 2px egeo-get-color(a2_dark);
          color: egeo-get-color(a2_dark);
       }
       &:not([disabled]):active {
-         box-shadow: 0 0 0 3px egeo-get-color(a1);
+         box-shadow: 0 0 0 2px egeo-get-color(a1);
          border: solid 3px egeo-get-color(a2_dark);
       }
    }
@@ -132,16 +132,15 @@ $this: 'button';
       background-color: #ccc;
       border-radius: 100%;
       font-size: egeo-get-font-size(body_small);
-      height: 35px;
 
       i {
          margin: 10px;
          display: inline-block;
       }
-      &:hover {
+      &:not([disabled]):hover {
          color: egeo-get-color(n0);
       }
-      &:active {
+      &:not([disabled]):active {
          box-shadow: 0 0 0 2px egeo-get-color(a1);
       }
    }
@@ -149,7 +148,7 @@ $this: 'button';
    &.button-rd1 {
       background-color: egeo-get-color(n1);
       color: egeo-get-color(a1);
-      &:hover {
+      &:not([disabled]):hover {
          background-color: egeo-get-color(a1_light);
       }
    }
@@ -157,7 +156,7 @@ $this: 'button';
    &.button-rd2 {
       background-color: egeo-get-color(n2);
       color: egeo-get-color(a2_dark);
-      &:hover {
+      &:not([disabled]):hover {
          background-color: egeo-get-color(a2_dark);
       }
    }
@@ -165,7 +164,7 @@ $this: 'button';
    &.button-rd3 {
       background-color: egeo-get-color(n2);
       color: egeo-get-color(a3);
-      &:hover {
+      &:not([disabled]):hover {
          background-color: egeo-get-color(a3);
       }
    }
@@ -173,7 +172,7 @@ $this: 'button';
    &.button-rd4 {
       background-color: egeo-get-color(n0);
       color: egeo-get-color(a1);
-      &:hover {
+      &:not([disabled]):hover {
          background-color: egeo-get-color(a1_light);
       }
    }
@@ -181,7 +180,7 @@ $this: 'button';
    &.button-rd5 {
       background-color: egeo-get-color(n0);
       color: egeo-get-color(a2_dark);
-      &:hover {
+      &:not([disabled]):hover {
          background-color: egeo-get-color(a2_dark);
       }
    }
@@ -189,7 +188,7 @@ $this: 'button';
    &.button-rd6 {
       background-color: egeo-get-color(n0);
       color: egeo-get-color(a3);
-      &:hover {
+      &:not([disabled]):hover {
          background-color: egeo-get-color(a3);
       }
    }
@@ -198,12 +197,12 @@ $this: 'button';
       background-color: transparent;
       border: solid 2px egeo-get-color(n6);
       color: egeo-get-color(n6);
-      &:hover {
+      &:not([disabled]):hover {
          border: solid 2px egeo-get-color(n7);
          color: egeo-get-color(n7);
       }
       i {
-         margin: 7px 10px;
+         margin: 7px 9px;
       }
    }
 
