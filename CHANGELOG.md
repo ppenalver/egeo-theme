@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0 (upcoming)
+
+* Pending changelog
+
 ## 0.14.0 (upcoming)
 
 * Removed st-button and define new button classes
