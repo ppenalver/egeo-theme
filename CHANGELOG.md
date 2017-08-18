@@ -4,7 +4,7 @@
 
 * Pending changelog
 
-## 0.14.0 (upcoming)
+## 0.14.0 (August 18, 2017)
 
 * Removed st-button and define new button classes
 * St-switch: Label color is different to the form input one
