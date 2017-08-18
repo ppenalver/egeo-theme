@@ -24,7 +24,10 @@ node_modules
 
 # Output file
 dist
-*.css
+/egeo-grid.css
+/egeo-grid.min.css
+/egeo-theme-stratio.css
+/egeo-theme-stratio.min.css
 *.map
 
 yarn.lock

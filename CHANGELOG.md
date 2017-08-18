@@ -2,7 +2,9 @@
 
 ## 1.0.0 (upcoming)
 
-* Pending changelog
+**build:**
+
+* Postcss configuration
 
 ## 0.14.0 (August 18, 2017)
 
