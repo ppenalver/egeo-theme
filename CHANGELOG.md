@@ -2,6 +2,10 @@
 
 ## 1.0.0 (upcoming)
 
+**Documentation:**
+
+* Update License
+
 **build:**
 
 * Postcss configuration
