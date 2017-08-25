@@ -18,12 +18,10 @@
 
 $egeo-fontface-src: './assets/fonts' !default;
 
-$egeo-brandon-text: true !default;
 $egeo-droid-sans-mono: true !default;
-$egeo-open-sans: true !default;
+$egeo-nunito-sans: true !default;
 $egeo-stratio-icons: true !default;
 
-@import '../vendors/fonts/brandon-text';
-@import '../vendors/fonts/open-sans';
 @import '../vendors/fonts/droid-sans-mono';
 @import '../vendors/fonts/stratio_fonticon';
+@import '../vendors/fonts/nunito-sans';
