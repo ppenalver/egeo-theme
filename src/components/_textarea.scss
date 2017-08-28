@@ -13,23 +13,23 @@
 
 .sth-textarea-container .sth-textarea-normal-bar::before,
 .sth-textarea-container .sth-textarea-normal-bar::after {
-   background: egeo-get-color(a1);
+   background: $brand;
    transition: 0.2s ease all;
 }
 
 .sth-textarea-container .sth-textarea-error-bar::before,
 .sth-textarea-container .sth-textarea-error-bar::after {
-   background: egeo-get-color(s2);
+   background: $status-warning-default;
    transition: 0.2s ease all;
 }
 
 .sth-textarea-container {
-   border-bottom: 1px solid egeo-get-color(a4);
+   border-bottom: 1px solid $neutral-08;
 }
 
 .sth-textarea-container ::placeholder {
    font-family: egeo-get-font(body);
-   color: egeo-get-color(n4);
+   color: $neutral-06;
    font-weight: egeo-get-font-weight(normal);
    font-size: egeo-get-font-size(body_large);
 }
@@ -40,44 +40,44 @@
 
 .sth-textarea-container.disabled {
    border-style: dashed;
-   border-color: egeo-get-color(n5);
+   border-color: $neutral-07;
 }
 
 .sth-textarea-container.error {
-   border-color: egeo-get-color(s2);
+   border-color: $status-warning-default;
 }
 
 .sth-textarea-container .sth-textarea-title.active {
-   color: egeo-get-color(a1);
+   color: $brand;
 }
 
 .sth-textarea-container .sth-textarea-title.disabled {
-   color: egeo-get-color(n5);
+   color: $neutral-07;
 }
 
 .sth-textarea-container .sth-textarea-title.error {
-   color: egeo-get-color(s2);
+   color: $status-warning-default;
 }
 
 .sth-textarea-container .sth-textarea-title {
    font-size: egeo-get-font-size(body_xsmall);
    font-weight: 400;
-   color: egeo-get-color(a4);
+   color: $neutral-08;
    text-align: left;
 }
 
 .sth-textarea-container .sth-textarea-remove-default {
    font-size: egeo-get-font-size(body_large);
    font-weight: egeo-get-font-weight(normal);
-   color: egeo-get-color(n9);
-   background-color: egeo-get-color(n0);
-   border-top: 1px solid egeo-get-color(n4);
-   border-left: 1px solid egeo-get-color(n2);
-   border-right: 1px solid egeo-get-color(n2);
+   color: $neutral-12;
+   background-color: $neutral-00;
+   border-top: 1px solid $neutral-06;
+   border-left: 1px solid $neutral-03;
+   border-right: 1px solid $neutral-03;
 }
 
 .sth-textarea-container .sth-textarea-remove-default.disabled {
-   color: egeo-get-color(n7);
+   color: $neutral-09;
 }
 
 .sth-textarea-remove-default:disabled {
@@ -87,7 +87,7 @@
 .sth-textarea-error-message {
    font-size: egeo-get-font-size(body_xsmall);
    font-weight: egeo-get-font-weight(normal);
-   color: egeo-get-color(s2);
+   color: $status-warning-default;
 }
 
 .sth-textarea {

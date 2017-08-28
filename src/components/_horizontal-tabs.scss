@@ -20,15 +20,15 @@
 }
 
 .sth-horizontal-tabs__option:hover:not(.sth-horizontal-tabs__option--disabled)>a {
-   color: egeo-get-color(n10);
+   color: $neutral-13;
 }
 
 .sth-horizontal-tabs__list {
-   border-bottom: 1px solid egeo-get-color(n3);
+   border-bottom: 1px solid $neutral-04;
 }
 
 .sth-horizontal-tabs__option__text {
-   color: egeo-get-color(n6);
+   color: $neutral-08;
    text-decoration: none;
    font-family: egeo-get-font(heading);
    font-size: 15px;
@@ -36,7 +36,7 @@
 
    &:hover {
       text-decoration: none;
-      color: egeo-get-color(n10);
+      color: $neutral-13;
    }
    &:focus {
       text-decoration: none;
@@ -45,15 +45,15 @@
 }
 
 .sth-horizontal-tabs__option--active {
-   background-color: egeo-get-color(n0);
-   border: 1px solid egeo-get-color(n3);
-   border-bottom-color: egeo-get-color(n0);
+   background-color: $neutral-00;
+   border: 1px solid $neutral-04;
+   border-bottom-color: $neutral-00;
    text-decoration: none;
    &:focus {
       text-decoration: none;
       outline: none;
    }
    >.sth-horizontal-tabs__option__text {
-      color: egeo-get-color(n10) !important;
+      color: $neutral-13 !important;
    }
 }

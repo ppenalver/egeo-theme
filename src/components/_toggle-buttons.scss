@@ -16,19 +16,19 @@
 }
 
 .sth-toggle-buttons__tab {
-   color: egeo-get-color(n7);
-   background: egeo-get-color(n2);
+   color: $neutral-09;
+   background: $neutral-03;
    cursor: pointer;
    font-size: egeo-get-font-size("body_xsmall");
 }
 
 .sth-toggle-buttons__tab:hover {
-   background: egeo-get-color(n3);
+   background: $neutral-04;
 }
 
 .sth-toggle-buttons__tab--active,
 .sth-toggle-buttons__tab--active:hover {
-   color: egeo-get-color(n0);
-   background: egeo-get-color(n6);
+   color: $neutral-00;
+   background: $neutral-08;
    cursor: default;
 }

@@ -6,9 +6,9 @@
 
 * Update License
 
-**build:**
+**refactor:**
 
-* Postcss configuration
+* added new colors
 
 ## 0.14.0 (August 18, 2017)
 

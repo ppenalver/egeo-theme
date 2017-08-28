@@ -16,9 +16,9 @@
    font-size: egeo-get-font-size(body_xxsmall);
    font-weight: egeo-get-font-weight(normal);
    &.themeA {
-      color: egeo-get-color(n5);
+      color: $neutral-07;
    }
    &.themeB {
-      color: egeo-get-color(n6);
+      color: $neutral-08;
    }
 }

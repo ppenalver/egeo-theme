@@ -12,31 +12,31 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-modal {
-   background-color: egeo-get-color(n10, false, 0.4);
+   background-color: rgba($neutral-13, 0.4);
 }
 
 .sth-modal-content {
-   background-color: egeo-get-color(n1);
-   border: 1px solid egeo-get-color(n10, true, 0.2);
-   box-shadow: 0 4px 8px 0 egeo-get-color(n10, true, 0.2), 0 6px 20px 0 egeo-get-color(n10, true, 0.19);
+   background-color: $neutral-02;
+   border: 1px solid rgba($neutral-13, 0.2);
+   box-shadow: 0 4px 8px 0 rgba($neutral-13, 0.2), 0 6px 20px 0 rgba($neutral-13, 0.19);
 }
 
 .sth-modal-header {
-   background-color: egeo-get-color(n2);
+   background-color: $neutral-03;
    font-family: egeo-get-font(heading);
    &.st-modal-warning {
-      color: egeo-get-color(s2);
+      color: $status-warning-default;
    }
    &.st-modal-info {
-      color: egeo-get-color(a1);
+      color: $brand;
    }
    &.st-modal-neutral {
-      color: egeo-get-color(n7);
+      color: $neutral-09;
    }
 }
 
 .sth-modal-close-button {
-   color: egeo-get-color(n7);
+   color: $neutral-09;
    font-size: egeo-get-font-size(icon_xlarge);
 }
 
@@ -51,7 +51,7 @@
 
 .sth-modal-body {
    font-family: egeo-get-font(body);
-   color: egeo-get-color(n8);
+   color: $neutral-10;
 }
 
 .sth-modal-message-big {
@@ -63,7 +63,7 @@
 }
 
 .sth-modal-contextual {
-   background-color: egeo-get-color(n3);
-   color: egeo-get-color(n6);
+   background-color: $neutral-04;
+   color: $neutral-08;
    font-size: egeo-get-font-size(head_xxsmall);
 }

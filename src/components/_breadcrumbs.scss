@@ -12,10 +12,10 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 $font-family: egeo-get-font(body);
-$text-color: egeo-get-color(a2) !default;
-$text-color---hover: egeo-get-color(n0);
-$text-color---active: egeo-get-color(n10);
-$bg-color---hover: egeo-get-color(a1);
+$text-color: $neutral-07 !default;
+$text-color---hover: $neutral-00;
+$text-color---active: $neutral-13;
+$bg-color---hover: $brand;
 $font-size: egeo-get-font-size(head_xxsmall) !default;
 
 .sth-breadcrumbs {

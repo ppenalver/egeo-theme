@@ -12,15 +12,15 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-form-label {
-   color: egeo-get-color(a4);
+   color: $neutral-08;
 }
 
 .sth-form-label.error {
-   color: egeo-get-color(s2);
+   color: $status-warning-default;
 }
 
 .sth-form-label.active {
-   color: egeo-get-color(a1);
+   color: $brand;
 }
 
 .sth-form-label__label--top {

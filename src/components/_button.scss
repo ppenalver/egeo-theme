@@ -43,14 +43,14 @@ $this: 'button';
    &.button-sq3,
    &.button-sq4 {
       outline: none;
-      color: egeo-get-color(n0);
+      color: $neutral-00;
       padding: 5px 20px;
       text-transform: uppercase;
       &:not([disabled]):hover {
          cursor: pointer;
       }
       &:active {
-         border: solid 3px egeo-get-color(a1);
+         border: solid 3px $action-primary-default;
          margin:-3px 0 -3px -3px;
       }
    }
@@ -64,38 +64,38 @@ $this: 'button';
    }
 
    &.button-sq1 {
-      background-color: egeo-get-color(a1);
+      background-color: $action-primary-default;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a1_dark)
+         background-color: $action-primary-hover
       }
    }
 
    &.button-sq2 {
-      background-color: egeo-get-color(a2);
+      background-color: $action-secondary-04;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a2_dark)
+         background-color: $action-secondary-05
       }
    }
 
    &.button-sq3 {
-      background-color: egeo-get-color(a3);
+      background-color: $action-secondary-06;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a3_dark)
+         background-color: $action-secondary-07
       }
    }
 
    &.button-sq4 {
-      box-shadow: 0 0 0 2px egeo-get-color(a2);
+      box-shadow: 0 0 0 2px $action-secondary-04;
       border: none;
       padding: 2px 20px;
-      color: egeo-get-color(a2);
+      color: $action-secondary-04;
       &:not([disabled]):hover {
-         box-shadow: 0 0 0 2px egeo-get-color(a2_dark);
-         color: egeo-get-color(a2_dark);
+         box-shadow: 0 0 0 2px $action-secondary-05;
+         color: $action-secondary-05;
       }
       &:not([disabled]):active {
-         box-shadow: 0 0 0 2px egeo-get-color(a1);
-         border: solid 3px egeo-get-color(a2_dark);
+         box-shadow: 0 0 0 2px $action-primary-default;
+         border: solid 3px $action-secondary-05;
       }
    }
 
@@ -103,33 +103,33 @@ $this: 'button';
    &.button-lk2,
    &.button-lk3,
    &.button-lk4 {
-      color: egeo-get-color(n0);
+      color: $neutral-00;
       padding: 8px 20px;
 
       &:active {
-         border: solid 3px egeo-get-color(a1);
+         border: solid 3px $action-primary-default;
          margin:-3px 0 -3px -3px;
       }
    }
 
    &.button-lk1,
    &.button-lk3 {
-      color: egeo-get-color(a1);
+      color: $action-primary-default;
    }
 
    &.button-lk2,
    &.button-lk4 {
-      color: egeo-get-color(a2_dark);
+      color: $action-secondary-05;
    }
 
    &.button-lk1:not([disabled]):hover,
    &.button-lk2:not([disabled]):hover {
-      background-color: egeo-get-color(n2);
+      background-color: $neutral-03;
    }
 
    &.button-lk3:not([disabled]):hover,
    &.button-lk4:not([disabled]):hover {
-      background-color: egeo-get-color(n3);
+      background-color: $neutral-04;
    }
 
    &.button-rd1,
@@ -148,72 +148,72 @@ $this: 'button';
          display: inline-block;
       }
       &:not([disabled]):hover {
-         color: egeo-get-color(n0);
+         color: $neutral-00;
       }
       &:not([disabled]):active {
-         box-shadow: 0 0 0 2px egeo-get-color(a1);
+         box-shadow: 0 0 0 2px $action-primary-default;
       }
    }
 
    &.button-rd1 {
-      background-color: egeo-get-color(n1);
-      color: egeo-get-color(a1);
+      background-color: $neutral-02;
+      color: $action-primary-default;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a1_light);
+         background-color: $misc-aqua;
       }
    }
 
    &.button-rd2 {
-      background-color: egeo-get-color(n2);
-      color: egeo-get-color(a2_dark);
+      background-color: $neutral-03;
+      color: $action-secondary-05;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a2_dark);
+         background-color: $action-secondary-05;
       }
    }
 
    &.button-rd3 {
-      background-color: egeo-get-color(n2);
-      color: egeo-get-color(a3);
+      background-color: $neutral-03;
+      color: $action-secondary-06;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a3);
+         background-color: $action-secondary-06;
       }
    }
 
    &.button-rd4 {
-      background-color: egeo-get-color(n0);
-      color: egeo-get-color(a1);
+      background-color: $neutral-00;
+      color: $action-primary-default;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a1_light);
+         background-color: $misc-aqua;
       }
    }
 
    &.button-rd5 {
-      background-color: egeo-get-color(n0);
-      color: egeo-get-color(a2_dark);
+      background-color: $neutral-00;
+      color: $action-secondary-05;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a2_dark);
+         background-color: $action-secondary-05;
       }
    }
 
    &.button-rd6 {
-      background-color: egeo-get-color(n0);
-      color: egeo-get-color(a3);
+      background-color: $neutral-00;
+      color: $action-secondary-06;
       &:not([disabled]):hover {
-         background-color: egeo-get-color(a3);
+         background-color: $action-secondary-06;
       }
    }
 
    &.button-rd7 {
       background-color: transparent;
-      border: solid 2px egeo-get-color(n6);
-      color: egeo-get-color(n6);
+      border: solid 2px $neutral-08;
+      color: $neutral-08;
       &:not([disabled]):hover {
-         border: solid 2px egeo-get-color(n7);
-         color: egeo-get-color(n7);
+         border: solid 2px $neutral-09;
+         color: $neutral-09;
       }
       i {
          margin: 7px 9px;
       }
    }
-
 }
+

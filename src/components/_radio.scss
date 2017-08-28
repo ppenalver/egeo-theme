@@ -18,10 +18,10 @@
    &:hover {
 
       .sth-radio-custom {
-         border-color: egeo-get-color(a1);
+         border-color: $brand;
 
          &:before {
-            background: egeo-get-color(a1);
+            background: $brand;
          }
       }
 
@@ -30,35 +30,35 @@
    &.disabled {
       .sth-radio-custom {
          &:hover {
-            border: 1px solid egeo-get-color(n5);
+            border: 1px solid $neutral-07;
          }
       }
    }
 }
 
 .sth-radio-custom {
-   background-color: egeo-get-color(n0);
-   border: 1px solid egeo-get-color(n5);
+   background-color: $neutral-00;
+   border: 1px solid $neutral-07;
 
 
    &.checked {
-      border-color: egeo-get-color(n10);
+      border-color: $neutral-13;
 
       &:before {
-         background: egeo-get-color(n10);
+         background: $neutral-13;
       }
    }
 
    &.disabled {
-      border-color: egeo-get-color(n5);
+      border-color: $neutral-07;
       opacity: 0.9;
    }
 
    &:hover {
-      border-color: egeo-get-color(a1);
+      border-color: $brand;
 
       &:before {
-         background: egeo-get-color(a1);
+         background: $brand;
       }
    }
 }

@@ -13,18 +13,18 @@
 
 .sth-pagination {
    font-family: egeo-get-font(body);
-   background: egeo-get-color(n1);
+   background: $neutral-02;
 
    &.themeA {
-      background: egeo-get-color(n1);
+      background: $neutral-02;
    }
 
    &.themeB {
-      background: egeo-get-color(n0);
+      background: $neutral-00;
    }
 }
 
 .sth-pagination-pages {
    font-size: egeo-get-font-size(body_xsmall);
-   color: egeo-get-color(n7)
+   color: $neutral-09
 }

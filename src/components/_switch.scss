@@ -21,7 +21,7 @@
 }
 
 .sth-switch__help {
-   color: egeo-get-color(n6);
+   color: $neutral-08;
    font-size: 12px;
 }
 
@@ -31,22 +31,22 @@
 
 .st-switch--on {
    .sth-switch__box {
-      background-color: egeo-get-color(a1);
+      background-color: $brand;
    }
    .sth-switch__circle {
       margin-left: 13px;
-      border: solid 1px egeo-get-color(a1);
+      border: solid 1px $brand;
    }
 }
 
 .st-switch--off {
    .sth-switch__box {
-      background-color: egeo-get-color(n1);
-      border: solid 1px egeo-get-color(n5);
+      background-color: $neutral-02;
+      border: solid 1px $neutral-07;
    }
 
    .sth-switch__circle {
-      border: solid 1px egeo-get-color(n5);
+      border: solid 1px $neutral-07;
    }
 }
 

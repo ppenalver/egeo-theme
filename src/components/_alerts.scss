@@ -13,22 +13,22 @@
 
 .sth-alert-box {
    width: 100%;
-   color: egeo-get-color(n0);
+   color: $neutral-00;
    font-family: egeo-get-font(body);
    min-height: 100px;
    display: block;
    position: relative;
 
    &-success {
-      background: egeo-get-color(s1_dark);
+      background: $status-success-default;
    }
 
    &-warning {
-      background: egeo-get-color(s2_dark);
+      background: $status-warning-hover;
    }
 
    &-error {
-      background: egeo-get-color(s3_dark);
+      background: $status-critical-hover;
    }
 
    .sth-alert-box-close-button {

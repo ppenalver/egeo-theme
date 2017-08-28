@@ -12,35 +12,35 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-two-list__list-item {
-   border-bottom: 1px solid egeo-get-color(n3);
+   border-bottom: 1px solid $neutral-04;
 }
 
 .sth-two-list__list-title {
    font-weight: egeo-get-font-weight(bold);
    font-family: egeo-get-font(body);
    font-size: egeo-get-font-size(body_large);
-   color: egeo-get-color(n6);
+   color: $neutral-08;
    &.sth-two-list__important-title {
-      color: egeo-get-color(n7);
+      color: $neutral-09;
    }
 }
 
 .sth-two-list {
    font-family: egeo-get-font(body);
    font-size: egeo-get-font-size(body_medium);
-   color: egeo-get-color(n7);
+   color: $neutral-09;
 }
 
 .sth-two-list__list {
-   background-color: egeo-get-color(n0);
+   background-color: $neutral-00;
 }
 
 .sth-two-list__all-list {
-   border: 1px solid egeo-get-color(n2);
+   border: 1px solid $neutral-03;
 }
 
 .sth-two-list__selected-list {
-   border: 1px solid egeo-get-color(n5);
+   border: 1px solid $neutral-07;
 }
 
 .sth-two-list-selection__item-normal {

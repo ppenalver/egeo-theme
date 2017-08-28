@@ -13,22 +13,22 @@
 
 .sth-tree-node {
     &-filetype {
-        color: egeo-get-color(n7);
+        color: $neutral-09;
         font-size: egeo-get-font-size(icon_xxsmall);
         text-align: right;
         &:hover {
-            color: egeo-get-color(a1);
+            color: $brand;
         }
     }
     &-name {
         font-family: egeo-get-font(body);
         font-size: egeo-get-font-size(body_xsmall);
         text-align: left;
-        color: egeo-get-color(n7);
+        color: $neutral-09;
     }
     &-container{
        &__active {
-        background-color: egeo-get-color(n3);
+        background-color: $neutral-04;
         padding-left: 2px;
         padding-right: 2px;
     }

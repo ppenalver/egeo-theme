@@ -12,7 +12,7 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-table__header {
-   border-bottom: 1px solid egeo-get-color(n4);
+   border-bottom: 1px solid $neutral-06;
 }
 
 .sth-table__header-item {
@@ -21,7 +21,7 @@
    font-weight: bold;
    line-height: 2.77;
    text-align: left;
-   color: egeo-get-color(n8);
+   color: $neutral-10;
 }
 
 .sth-table__header-text {
@@ -33,7 +33,7 @@
    font-weight: 800;
    .sth-table__order-arrow {
       font-weight: 800;
-      color: egeo-get-color(n9) !important;
+      color: $neutral-12 !important;
    }
 }
 
@@ -42,23 +42,23 @@
    font-size: 13px;
    line-height: 2.08;
    text-align: left;
-   color: egeo-get-color(n4);
+   color: $neutral-06;
 }
 
 .sth-table__order-arrow:hover {
-   color: egeo-get-color(n9);
+   color: $neutral-12;
 }
 
 // row theme
 .sth-table-row {
-   border-bottom: 1px solid egeo-get-color(n3);
+   border-bottom: 1px solid $neutral-04;
    font-family: egeo-get-font(body);
    font-size: 13px;
    line-height: 2.77;
-   color: egeo-get-color(n6);
+   color: $neutral-08;
 }
 
 .sth-table-row:hover {
-   background-color: rgba(egeo-get-color(a1), 0.1);
+   background-color: rgba($brand, 0.1);
 }
 

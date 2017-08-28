@@ -12,18 +12,18 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-vertical-tabs__option {
-   border-bottom: 1px solid egeo-get-color(n3);
+   border-bottom: 1px solid $neutral-04;
    border-right-width: 0;
    border-left-width: 0;
 }
 
 .sth-vertical-tabs__option:first-child {
-    border-top: 1px solid egeo-get-color(n3);
+    border-top: 1px solid $neutral-04;
 }
 
 .sth-vertical-tabs__option__text {
    cursor: pointer;
-   color: egeo-get-color(n6);
+   color: $neutral-08;
    font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
    font-weight: 400;
@@ -36,12 +36,12 @@
    }
    &:hover {
       text-decoration: none;
-      color: egeo-get-color(n10);
+      color: $neutral-13;
    }
 }
 
 .sth-vertical-tabs__option__text.sth-vertical-tabs__option--active {
-   color: egeo-get-color(n10);
+   color: $neutral-13;
    text-decoration: none;
    &:focus {
       text-decoration: none;
@@ -50,12 +50,12 @@
 }
 
 .sth-vertical-tabs__line {
-   border-left: 1px solid egeo-get-color(n4);
+   border-left: 1px solid $neutral-06;
 }
 
 .sth-vertical-tabs__line__arrow {
-   background-color: egeo-get-color(n0);
-   border: 1px solid egeo-get-color(n6);
+   background-color: $neutral-00;
+   border: 1px solid $neutral-08;
    border-bottom-width: 0;
    border-left-width: 0;
    transition: margin-top 0.4s;

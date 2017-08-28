@@ -12,24 +12,24 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-info-box {
-   background-color: egeo-get-color(n1);
-   border-bottom: 1px solid egeo-get-color(n3);
+   background-color: $neutral-02;
+   border-bottom: 1px solid $neutral-04;
 }
 
 .sth-info-box__header {
-   background-color: egeo-get-color(n2);
+   background-color: $neutral-03;
 }
 
 .sth-info-box__header__icon {
    text-align: center;
    font-family: egeo-get-font(icon);
    font-size: egeo-get-font-size(icon_medium);
-   color: egeo-get-color(n7);
+   color: $neutral-09;
 }
 
 .sth-info-box__header__text {
    text-align: center;
-   color: egeo-get-color(n7);
+   color: $neutral-09;
    text-transform: uppercase;
    font-family: egeo-get-font(heading);
 }

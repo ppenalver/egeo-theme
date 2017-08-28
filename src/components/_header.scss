@@ -11,22 +11,22 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
-$header-background: egeo-get-color(b2) !default;
+$header-background: $neutral-13 !default;
 
 .st-header-menu {
    background-color: $header-background;
 }
 
 .sth-header-border {
-   background-color: egeo-get-color(b1);
+   background-color: $neutral-12;
 }
 
 .sth-sub-menu {
-   background-color: egeo-get-color(b3);
+   background-color: $neutral-02;
 }
 
 .sth-app {
-   color: egeo-get-color(n0);
+   color: $neutral-00;
 }
 
 .sth-app-name {
@@ -47,17 +47,17 @@ $header-background: egeo-get-color(b2) !default;
 
 .sth-option {
    font-family: egeo-get-font(heading);
-   color: egeo-get-color(n6);
+   color: $neutral-08;
    outline: none;
 
    &:hover {
-      color: egeo-get-color(b3);
+      color: $neutral-02;
       transition: all .3s ease-in-out;
    }
 }
 
 .sth-active {
-   color: egeo-get-color(b3);
+   color: $neutral-02;
 }
 
 .sth-link-icon {
@@ -73,8 +73,8 @@ $header-background: egeo-get-color(b2) !default;
    height: 0;
    border-top: 12px solid transparent;
    border-right: 12px solid transparent;
-   border-left: 12px solid  egeo-get-color(b2);
-   border-bottom: 12px solid egeo-get-color(b2);
+   border-left: 12px solid  $neutral-13;
+   border-bottom: 12px solid $neutral-13;
    position: absolute;
    left: 0;
    top: 10px;
@@ -88,25 +88,25 @@ $header-background: egeo-get-color(b2) !default;
    line-height: 34px;
    min-width: 35px;
    padding-left: 35px;
-   background-color: egeo-get-color(b1);
+   background-color: $neutral-12;
 }
 
 .sth-header-submenu-option {
-   color: egeo-get-color(n6);
+   color: $neutral-08;
    font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
    outline: none;
 }
 
 .sth-header-submenu-active {
-   border-bottom: 4px solid egeo-get-color(a1);
-   color: egeo-get-color(n8);
+   border-bottom: 4px solid $brand;
+   color: $neutral-10;
    padding-top: 4px;
 }
 
 .sth-header-submenu-option:nth-child(n+3):before {
    content: '|';
-   color: egeo-get-color(n4);
+   color: $neutral-06;
    font-family: egeo-get-font(heading);
    font-size: egeo-get-font-size(head_xxsmall);
    position: absolute;
@@ -114,28 +114,28 @@ $header-background: egeo-get-color(b2) !default;
 }
 
 .sth-header-submenu-pointer {
-   border-top-color: egeo-get-color(b2)
+   border-top-color: $neutral-13
 }
 
 .sth-header-user-menu {
-   color: egeo-get-color(n0);
+   color: $neutral-00;
    font-family: egeo-get-font(body);
    font-size: egeo-get-font-size(body_xxsmall);
    font-weight: egeo-get-font-weight(bold);
 }
 
 .sth-header-user-combo-list {
-   background-color: egeo-get-color(n0);
+   background-color: $neutral-00;
    font-family: egeo-get-font(body);
    font-size: egeo-get-font-size(body_xxsmall);
    font-weight: egeo-get-font-weight(normal);
-   color: egeo-get-color(n7);
+   color: $neutral-09;
 
    &:before {
       content:"\A";
       border-style: solid;
       border-width: 5px;
-      border-color: transparent transparent egeo-get-color(n0) transparent;
+      border-color: transparent transparent $neutral-00 transparent;
       position: absolute;
       top: -10px;
       right: 7px;
@@ -143,17 +143,17 @@ $header-background: egeo-get-color(b2) !default;
 }
 
 .sth-header-user-menu-combo-selector {
-   color: egeo-get-color(n7);
+   color: $neutral-09;
 }
 
 .sth-header-disable-option {
    cursor: default;
    pointer-events: none;
-   color: egeo-get-color(n6, true, 0.5);
+   color: rgba($neutral-08, 0.5);
 }
 
 .sth-header-submenu-disable-option {
    cursor: default;
    pointer-events: none;
-   color: egeo-get-color(n6, true, 0.5);
+   color: rgba($neutral-08, 0.5);
 }

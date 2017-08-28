@@ -13,42 +13,42 @@
 
 .sth-radio-menu-option {
    font-family: egeo-get-font(body);
-   color: egeo-get-color(n7);
+   color: $neutral-09;
 
    &.active {
-      color: egeo-get-color(n9);
-      background-color: egeo-get-color(n1);
+      color: $neutral-12;
+      background-color: $neutral-02;
 
       &:after {
-         border-left: 60px solid egeo-get-color(n1);
+         border-left: 60px solid $neutral-02;
       }
 
       &:before {
-         background-color: egeo-get-color(n1);
+         background-color: $neutral-02;
       }
    }
 
    &.no-active {
-      color: egeo-get-color(n4);
+      color: $neutral-06;
    }
 }
 
 .theme-gray-1 {
    .sth-radio-menu-option {
       &.active {
-         background-color: egeo-get-color(n2);
+         background-color: $neutral-03;
 
          &:after {
-            border-left: 60px solid egeo-get-color(n2);
+            border-left: 60px solid $neutral-03;
          }
 
          &:before {
-            background-color: egeo-get-color(n2);
+            background-color: $neutral-03;
          }
       }
 
       &.no-active {
-         color: egeo-get-color(n5);
+         color: $neutral-07;
       }
    }
 }
@@ -56,21 +56,21 @@
 .theme-gray-2 {
    .sth-radio-menu-option {
 
-      background-color: egeo-get-color(n0);
+      background-color: $neutral-00;
       &.active {
-         background-color: egeo-get-color(n1);
+         background-color: $neutral-02;
 
          &:after {
-            border-left: 60px solid egeo-get-color(n1);
+            border-left: 60px solid $neutral-02;
          }
 
          &:before {
-            background-color: egeo-get-color(n1);
+            background-color: $neutral-02;
          }
       }
 
       &.no-active {
-         color: egeo-get-color(n4);
+         color: $neutral-06;
       }
    }
 }

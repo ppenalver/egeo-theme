@@ -15,15 +15,15 @@
    font-family: egeo-get-font(body);
    font-weight: egeo-get-font-weight(normal);
    font-size: egeo-get-font-size(body_xsmall);
-   color: egeo-get-color(n7);
-   background-color: egeo-get-color(n1);
+   color: $neutral-09;
+   background-color: $neutral-02;
 
    &.themeA {
-      background-color: egeo-get-color(n1)
+      background-color: $neutral-02
    }
 
    &.themeB {
-      background-color: egeo-get-color(n0)
+      background-color: $neutral-00
    }
 }
 

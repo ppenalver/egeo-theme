@@ -12,23 +12,23 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 .sth-info-card__title {
    font-size: egeo-get-font-size(body_xxlarge);
-   color: egeo-get-color(n9);
+   color: $neutral-12;
    font-weight: egeo-get-font-weight(light);
    text-overflow: ellipsis;
 }
 
 .sth-info-card__photo-div {
-   border: 1px solid egeo-get-color(n3);
+   border: 1px solid $neutral-04;
 }
 
 .sth-info-card__description {
    font-size: egeo-get-font-size(body_small);
-   color: egeo-get-color(n6);
+   color: $neutral-08;
    text-align: justify;
 }
 
 .sth-info-card__arrow {
-   color: egeo-get-color(a1);
+   color: $brand;
    font-size: egeo-get-font-size(icon_small);
    visibility: hidden;
    margin-right: 40px;
@@ -42,12 +42,12 @@
 }
 
 .sth-info-card {
-   background-color: egeo-get-color(n2);
+   background-color: $neutral-03;
    font-family: egeo-get-font(body);
 }
 
 .sth-info-card:hover {
-   background-color: egeo-get-color(a1, true, 0.2);
+   background-color: rgba($action-primary-default, 0.2);
    cursor: pointer;
    & .sth-info-card__arrow {
       visibility: visible;

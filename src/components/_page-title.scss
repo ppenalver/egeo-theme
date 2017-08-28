@@ -12,7 +12,7 @@
 @import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
 .sth-page-title {
-   border-bottom: 2px solid egeo-get-color(n4);
+   border-bottom: 2px solid $neutral-06;
 }
 
 .sth-page-title-main-title {
@@ -22,37 +22,37 @@
 }
 
 .sth-page-title-title {
-  color: egeo-get-color(a3_dark);
+  color: $neutral-11;
   text-transform: uppercase;
 }
 
 .sth-page-title-pre-title {
-   color: egeo-get-color(n5);
+   color: $neutral-07;
    text-transform: uppercase;
 }
 
 .sth-page-title-button-box {
-   border-right: 2px solid egeo-get-color(n4);
+   border-right: 2px solid $neutral-06;
 }
 
 
 .sth-error {
-   border-color: egeo-get-color(s3) !important;
+   border-color: $status-critical-default !important;
 }
 
 .sth-error-text {
    font-size: 13px;
-   color: egeo-get-color(s3);
+   color: $status-critical-default;
 }
 
 .sth-button-edit {
-   color: egeo-get-color(n6);
+   color: $neutral-08;
 }
 
 .sth-editable {
    .sth-page-title-title {
       &:hover {
-         border-color: egeo-get-color(n3)
+         border-color: $neutral-04
       }
    }
 }
