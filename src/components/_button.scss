@@ -8,212 +8,204 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
-@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
-$this: 'button';
+/// VARS:
+$hover: '&:not([disabled]):hover';
 
-.#{$this} {
+/// tipography EXTENDS (@extend %button-label-regular;):
+%button-label-regular {
+   color:         $neutral-00;
+   font-family:   $egeo-nunito-sans-bold;
+   font-size:     $egeo-font-size-small;
+   line-height:   $egeo-line-height-small;
+   &[disabled] {
+      color:      $neutral-06;
+   }
+}
+%button-label-regular-secondary {
+   color:         $action-primary-default;
+   font-family:   $egeo-nunito-sans-bold;
+   font-size:     $egeo-font-size-small;
+   line-height:   $egeo-line-height-small;
+   &[disabled] {
+      color:      $neutral-06;
+   }
+}
+%button-label-large {
+   color:         $neutral-00;
+   font-family:   $egeo-nunito-sans-bold;
+   font-size:     $egeo-font-size-medium;
+   line-height:   $egeo-line-height-medium;
+   &[disabled] {
+      color:      $neutral-06;
+   }
+}
+%button-label-large-secondary {
+   color:         $action-primary-default;
+   font-family:   $egeo-nunito-sans-bold;
+   font-size:     $egeo-font-size-medium;
+   line-height:   $egeo-line-height-medium;
+}
+%button-toolbar-ico-default {
+   color:         $neutral-10;
+   font-family:   $egeo-stratio-icons;
+   font-size:     $egeo-font-size-medium;
+   line-height:   $egeo-line-height-medium;
+   &[disabled] {
+      color:      $neutral-06;
+   }
+}
+.button-link-primary {
+   color:         $action-primary-default;
+   font-family:   $egeo-nunito-sans;
+   font-size:     $egeo-font-size-small;
+   line-height:   $egeo-line-height-small;
+   &:not([disabled]):hover {
+      color:      $action-primary-hover;
+   }
+}
+.button-link-secondary {
+   color:         $neutral-09;
+   font-family:   $egeo-nunito-sans;
+   font-size:     $egeo-font-size-small;
+   line-height:   $egeo-line-height-small;
+   text-decoration: underline;
+
+   &:not([disabled]):hover {
+      color:      $neutral-10;
+   }
+}
+
+/// STYLES:
+.button {
    & {
       box-sizing: border-box;
-      cursor: pointer;
+      border-radius: 4px;
       outline: none;
-      font-family: egeo-get-font(body);
-      font-size: egeo-get-font-size(body_small);
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;
       max-width: 100%;
       vertical-align: middle;
    }
 
-   i {
-      font-family: egeo-get-font(icon);
-      font-size: egeo-get-font-size(icon_xsmall);
-      vertical-align: middle;
+   #{$hover} {
+      cursor: pointer;
    }
 
-   &[disabled] {
-      cursor:default;
-      opacity: .2;
-   }
+   &.button-primary,
+   &.button-secondary-line,
+   &.button-secondary-gray,
+   &.button-critical,
+   &.button-warning,
+   &.button-success {
+      @extend %button-label-regular;
+      padding:0.625rem 1.875rem;
+      text-overflow: ellipsis;
 
-   &.button-sq1,
-   &.button-sq2,
-   &.button-sq3,
-   &.button-sq4 {
-      outline: none;
-      color: $neutral-00;
-      padding: 5px 20px;
-      text-transform: uppercase;
-      &:not([disabled]):hover {
-         cursor: pointer;
+      &[disabled] {
+         background-color: $neutral-03;
       }
-      &:active {
-         border: solid 3px $action-primary-default;
-         margin:-3px 0 -3px -3px;
-      }
-   }
 
-   &.block {
-      width: 100%;
-      &:active {
-         box-sizing: content-box;
-         width: calc(100% - 40px)
+      &.block {
+         width:100%;
+      }
+
+      &.large {
+         @extend %button-label-large;
+         padding: .875rem 2.5rem;
+      }
+
+      i {
+         margin-top:2px;
       }
    }
 
-   &.button-sq1 {
+   &.button-primary {
       background-color: $action-primary-default;
-      &:not([disabled]):hover {
-         background-color: $action-primary-hover
+
+      #{$hover} {
+         background-color: $action-primary-hover;
       }
    }
 
-   &.button-sq2 {
+   &.button-secondary-line {
+      @extend %button-label-regular-secondary;
+      background-color: $neutral-00;
+      border: solid $action-primary-default 1px;
+      padding: .625rem 1.8125rem;
+
+      #{$hover} {
+         color: $action-primary-hover;
+         border-color: $action-primary-hover;
+      }
+
+      &[disabled] {
+         background-color: $neutral-00;
+         border-color: $neutral-06;
+      }
+
+      &.large {
+         padding: .875rem 2.4375rem;
+      }
+   }
+
+   &.button-secondary-gray {
       background-color: $action-secondary-04;
-      &:not([disabled]):hover {
-         background-color: $action-secondary-05
-      }
-   }
 
-   &.button-sq3 {
-      background-color: $action-secondary-06;
-      &:not([disabled]):hover {
-         background-color: $action-secondary-07
-      }
-   }
-
-   &.button-sq4 {
-      box-shadow: 0 0 0 2px $action-secondary-04;
-      border: none;
-      padding: 2px 20px;
-      color: $action-secondary-04;
-      &:not([disabled]):hover {
-         box-shadow: 0 0 0 2px $action-secondary-05;
-         color: $action-secondary-05;
-      }
-      &:not([disabled]):active {
-         box-shadow: 0 0 0 2px $action-primary-default;
-         border: solid 3px $action-secondary-05;
-      }
-   }
-
-   &.button-lk1,
-   &.button-lk2,
-   &.button-lk3,
-   &.button-lk4 {
-      color: $neutral-00;
-      padding: 8px 20px;
-
-      &:active {
-         border: solid 3px $action-primary-default;
-         margin:-3px 0 -3px -3px;
-      }
-   }
-
-   &.button-lk1,
-   &.button-lk3 {
-      color: $action-primary-default;
-   }
-
-   &.button-lk2,
-   &.button-lk4 {
-      color: $action-secondary-05;
-   }
-
-   &.button-lk1:not([disabled]):hover,
-   &.button-lk2:not([disabled]):hover {
-      background-color: $neutral-03;
-   }
-
-   &.button-lk3:not([disabled]):hover,
-   &.button-lk4:not([disabled]):hover {
-      background-color: $neutral-04;
-   }
-
-   &.button-rd1,
-   &.button-rd2,
-   &.button-rd3,
-   &.button-rd4,
-   &.button-rd5,
-   &.button-rd6,
-   &.button-rd7 {
-      background-color: #ccc;
-      border-radius: 100%;
-      font-size: egeo-get-font-size(body_small);
-
-      i {
-         margin: 10px;
-         display: inline-block;
-      }
-      &:not([disabled]):hover {
-         color: $neutral-00;
-      }
-      &:not([disabled]):active {
-         box-shadow: 0 0 0 2px $action-primary-default;
-      }
-   }
-
-   &.button-rd1 {
-      background-color: $neutral-02;
-      color: $action-primary-default;
-      &:not([disabled]):hover {
-         background-color: $misc-aqua;
-      }
-   }
-
-   &.button-rd2 {
-      background-color: $neutral-03;
-      color: $action-secondary-05;
-      &:not([disabled]):hover {
+      #{$hover} {
          background-color: $action-secondary-05;
       }
    }
 
-   &.button-rd3 {
-      background-color: $neutral-03;
-      color: $action-secondary-06;
-      &:not([disabled]):hover {
-         background-color: $action-secondary-06;
+   &.button-critical {
+      background-color: $status-critical-default;
+
+      #{$hover} {
+         background-color: $status-critical-hover;
       }
    }
 
-   &.button-rd4 {
-      background-color: $neutral-00;
-      color: $action-primary-default;
-      &:not([disabled]):hover {
-         background-color: $misc-aqua;
+   &.button-warning {
+      background-color: $status-warning-default;
+
+      #{$hover} {
+         background-color: $status-warning-hover;
       }
    }
 
-   &.button-rd5 {
-      background-color: $neutral-00;
-      color: $action-secondary-05;
-      &:not([disabled]):hover {
-         background-color: $action-secondary-05;
+   &.button-success {
+      background-color: $status-success-default;
+
+      #{$hover} {
+         background-color: $status-success-hover;
       }
    }
 
-   &.button-rd6 {
-      background-color: $neutral-00;
-      color: $action-secondary-06;
-      &:not([disabled]):hover {
-         background-color: $action-secondary-06;
-      }
-   }
+   &.button-toolbar {
+      @extend %button-toolbar-ico-default;
+      border-radius: 4px;
+      border:solid 1px $neutral-05;
 
-   &.button-rd7 {
-      background-color: transparent;
-      border: solid 2px $neutral-08;
-      color: $neutral-08;
-      &:not([disabled]):hover {
-         border: solid 2px $neutral-09;
-         color: $neutral-09;
+      &[disabled] {
+         border: none;
+         background-color: $neutral-02;
       }
+
+      #{$hover} {
+         border:solid 1px $neutral-07;
+      }
+
       i {
-         margin: 7px 9px;
+         display: block;
+         padding:0.625rem;
       }
    }
 }
+
+
+
+
+
+
+
 
