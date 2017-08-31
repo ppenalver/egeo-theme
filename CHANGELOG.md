@@ -9,6 +9,8 @@
 **refactor:**
 
 * added new colors
+* all button classes and styles
+* added generic tipography vars and extends
 
 ## 0.14.0 (August 18, 2017)
 
