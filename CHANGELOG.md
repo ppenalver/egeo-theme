@@ -12,6 +12,8 @@
 * all button classes and styles
 * st-input & st-textarea
 * added generic tipography vars and extends
+* Egeo grid refactor
+
 
 ## 0.14.0 (August 18, 2017)
 
