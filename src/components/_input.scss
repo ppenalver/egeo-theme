@@ -8,30 +8,13 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
-@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
-
-.sth-input-container .sth-input-normal-bar::before,
-.sth-input-container .sth-input-normal-bar::after {
-   background: $brand;
-   transition: 0.2s ease all;
-}
-
-.sth-input-container .sth-input-error-bar::before,
-.sth-input-container .sth-input-error-bar::after {
-   background: $status-warning-default;
-   transition: 0.2s ease all;
-}
 
 .sth-input-container {
-   border-bottom: 1px solid $neutral-08;
+   font-family: $egeo-nunito-sans;
 }
 
 .sth-input-container ::placeholder {
-   font-family: egeo-get-font(body);
-   color: $neutral-06;
-   font-weight: egeo-get-font-weight(normal);
-   font-size: egeo-get-font-size(body_large);
+   color: $neutral-07;
 }
 
 .sth-input-container :focus::placeholder {
@@ -43,50 +26,38 @@
    border-color: $neutral-07;
 }
 
-.sth-input-container.error {
-   border-color: $status-warning-default;
-}
-
 .sth-input-container .sth-input-title.active {
    color: $brand;
 }
 
-.sth-input-container .sth-input-title.disabled {
-   color: $neutral-07;
-}
 
 .sth-input-container .sth-input-title.error {
    color: $status-warning-default;
 }
 
 .sth-input-container .sth-input-title {
-   font-size: egeo-get-font-size(body_xsmall);
-   font-weight: 400;
-   color: $neutral-08;
-   text-align: left;
+    font-size: 14px;
+    font-family: $egeo-nunito-sans-bold;
+    color: $neutral-08;
+    line-height: 1.43;
+
+    &.disabled{
+        color: $neutral-06;
+    }
 }
 
-.sth-input-container .sth-input-remove-default {
-   font-size: egeo-get-font-size(body_large);
-   font-weight: egeo-get-font-weight(normal);
-   color: $neutral-12;
-   background-color: transparent;
+
+.st-input.sth-input{
+
+    .sth-input-container.error {
+        .sth-input-title{
+            color: #e73851;
+        }
+    }
 }
 
-.sth-input-container .sth-input-remove-default.disabled {
-   color: $neutral-09;
-}
 
-.sth-input-remove-default:disabled {
-   background: none;
-}
-
-.sth-input-error-message {
-   font-size: egeo-get-font-size(body_xsmall);
-   font-weight: egeo-get-font-weight(normal);
-   color: $status-warning-default;
-}
-
-.sth-input {
-   font-family: egeo-get-font(body);
+.st-input-error-message {
+   font-size: 13px;
+   color: $status-critical-default;
 }
