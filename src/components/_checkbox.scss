@@ -8,31 +8,54 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
-@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
 
-.sth-checkbox {
-   .sth-checkbox-custom {
+/// tipography EXTENDS (@extend %button-label-regular;):
+%checkbox-default {
+   color: $action-secondary-07;
+   font-family: $egeo-nunito-sans;
+   font-size: $egeo-font-size-xsmall;
+   line-height: $egeo-font-size-large;
+   &[disabled] {
+      color: $neutral-05;
+   }
+}
+
+/// STYLES:
+.checkbox-flex > * {
+   display: flex;
+}
+
+.st-checkbox {
+   cursor: pointer;
+   display: inline-block;
+   margin-right: 1rem;
+
+   &.block {
+      display: block;
+   }
+
+   .label {
+      @extend %checkbox-default;
+      padding-left: .125rem;
+   }
+
+   .custom-checkbox {
       border: 1px solid $neutral-07;
-
-      &:hover {
-         border-color: $brand;
+      background-color: $neutral-00;
+      border-radius: .125rem;
+      width: .94rem;
+      height: .94rem;
+      display: inline-block;
+      position: relative;
+      top: .125rem;
+      &.icon-check2 {
+         background-color: $action-primary-default;
       }
-   }
-
-   &.disabled {
-      opacity: .5;
-      cursor: default;
-
-      .sth-checkbox-custom {
-         &:hover {
-            border-color: $neutral-07;
-         }
+      &:before {
+         color:$neutral-00;
+         position: absolute;
+         top: -.1875rem;
+         left: -.0625rem;
       }
-   }
-
-   .sth-checkbox-label {
-      font-family: egeo-get-font(body);
-      font-size: egeo-get-font-size(body_medium);
    }
 }

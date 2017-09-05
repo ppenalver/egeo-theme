@@ -14,6 +14,7 @@
 * added generic tipography vars and extends
 * Egeo grid refactor
 * added sanitize.css 5.0.0 as npm dependency
+* st-checkbox: update styles
 
 
 ## 0.14.0 (August 18, 2017)
