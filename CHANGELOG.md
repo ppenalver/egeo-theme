@@ -13,6 +13,7 @@
 * st-input & st-textarea
 * added generic tipography vars and extends
 * Egeo grid refactor
+* added sanitize.css 5.0.0 as npm dependency
 
 
 ## 0.14.0 (August 18, 2017)
