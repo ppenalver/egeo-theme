@@ -9,7 +9,8 @@
  * SPDX-License-Identifier: Apache-2.0.
  */
 @import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
-@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+@import '../constants/colors';
+
 .sth-info-card__title {
    font-size: egeo-get-font-size(body_xxlarge);
    color: $neutral-12;

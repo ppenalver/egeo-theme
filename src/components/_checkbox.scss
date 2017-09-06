@@ -10,6 +10,9 @@
  */
 
 /// tipography EXTENDS (@extend %button-label-regular;):
+@import '../constants/colors';
+@import '../constants/fonts';
+
 %checkbox-default {
    color: $action-secondary-07;
    font-family: $egeo-nunito-sans;

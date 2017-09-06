@@ -8,5 +8,7 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-
-@import 'utils/grid';
+@import 'constants/index';
+@import 'vendors/index';
+@import 'utils/index';
+@import 'components/index';
