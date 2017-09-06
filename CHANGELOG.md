@@ -15,6 +15,7 @@
 * Egeo grid refactor
 * added sanitize.css 5.0.0 as npm dependency
 * st-checkbox: update styles
+* st-breadcrumb refactor
 
 
 ## 0.14.0 (August 18, 2017)

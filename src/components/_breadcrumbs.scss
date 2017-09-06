@@ -8,39 +8,37 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
-@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
-
-$font-family: egeo-get-font(body);
-$text-color: $neutral-07 !default;
-$text-color---hover: $neutral-00;
-$text-color---active: $neutral-13;
-$bg-color---hover: $brand;
-$font-size: egeo-get-font-size(head_xxsmall) !default;
 
 .sth-breadcrumbs {
    &__item {
-      font-family: $font-family;
-      color: $text-color;
-      font-size: $font-size;
+      font-family: $egeo-nunito-sans;
+      color: $action-primary-default;
+      font-size: $egeo-font-size-xsmall;
+      text-transform: capitalize;
 
-      &--text {
-         padding: 4px 5px;
-
-         &:hover {
-            color: $text-color---hover;
-            background-color: $bg-color---hover;
-         }
+      &:after {
+        font-family: $egeo-stratio-icons;
+        content: "\E605";
+        font-size: $egeo-font-size-xxxsmall;
+        color: $neutral-09;
       }
 
-      &--arrow {
-         margin: 4px 5px;
+      &--text {
+         padding: 4px 6px;
+
+         &:hover {
+            color: $action-primary-hover;
+         }
       }
 
       .last & {
          &--text {
-            color: $text-color---active;
+            color: $neutral-13;
          }
+      }
+
+      &.last:after {
+        content: "";
       }
    }
 }
