@@ -16,6 +16,7 @@
 * added sanitize.css 5.0.0 as npm dependency
 * st-checkbox: update styles
 * st-breadcrumb refactor
+* st-header: refactor styles
 
 
 ## 0.14.0 (August 18, 2017)
