@@ -9,8 +9,30 @@
  * SPDX-License-Identifier: Apache-2.0.
  */
 
-@import '../settings/grid';
+ // Settings
+ $egeo-grid---cols: 12 !default;
+ $egeo-grid---gutter-width: 1.875rem !default;
+ $egeo-grid---half-gutter-width: $egeo-grid---gutter-width / 2;
+ $egeo-grid---outer-margin: $egeo-grid---half-gutter-width !default;
 
+ $egeo-grid---min: 48rem !default;
+ $egeo-grid---max: 78.125rem !default;
+
+ $egeo-grid---sm-viewport: 48 !default;
+ $egeo-grid---md-viewport: 64 !default;
+ $egeo-grid---lg-viewport: 76.25 !default;
+
+ $egeo-grid-config: (
+    mq: ('xs', 'sm', 'md', 'lg'),
+    viewports: (
+       'sm': 'only screen and (min-width: #{$egeo-grid---sm-viewport}em)',
+       'md': 'only screen and (min-width: #{$egeo-grid---md-viewport}em)',
+       'lg': 'only screen and (min-width: #{$egeo-grid---lg-viewport}em)'
+    )
+ );
+
+
+// Generation
 @mixin mq-code($mq) {
    .col-#{$mq},
    .col-#{$mq}-#{$egeo-grid---cols},

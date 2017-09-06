@@ -1,3 +1,6 @@
+@import '../constants/colors';
+@import '../constants/fonts';
+
 .st-form-control {
     color: $action-secondary-07;
     background-color: $neutral-00;
@@ -20,10 +23,10 @@
         }
 
     }
-    
+
     &:disabled {
         border-color: $neutral-05;
-        
+
         &::placeholder {
             color: $neutral-05;
         }

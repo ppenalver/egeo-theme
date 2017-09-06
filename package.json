@@ -6,18 +6,17 @@
   "sasslintConfig": ".sass-lint.yml",
   "scripts": {
     "replace": "json -I -f package.json -e",
-    "build": "npm run clean:dist && npm run build:sass && npm run build:postcss && npm run build:copycss && npm run build:cleancss",
+    "build": "npm run clean:dist && npm run build:sass && npm run build:postcss && npm run build:cleancss && npm run generate:sass",
     "build:sass": "npm run build:sass:theme && npm run build:sass:grid",
-    "build:sass:theme": "node-sass --include-path scss src/index.scss egeo-theme-stratio.css",
-    "build:sass:grid": "node-sass --include-path scss src/grid.scss egeo-grid.css",
+    "build:sass:theme": "node-sass --include-path scss src/theme.scss egeo-theme-stratio.css",
+    "build:sass:grid": "node-sass --include-path scss src/grid/grid.scss egeo-grid.css",
     "build:postcss": "postcss *.css -d .",
-    "build:copycss": "cp node_modules/sanitize.css/sanitize.css src/vendors/",
-    "build:cleancss": "npm run build:cleancss:theme && npm run build:cleancss:grid && npm run build:cleancss:sanitize",
+    "build:cleancss": "npm run build:cleancss:theme && npm run build:cleancss:grid",
     "build:cleancss:theme": "cleancss --source-map --output egeo-theme-stratio.min.css egeo-theme-stratio.css",
     "build:cleancss:grid": "cleancss --source-map --output egeo-grid.min.css egeo-grid.css",
-    "build:cleancss:sanitize": "cleancss --output src/vendors/sanitize.css src/vendors/sanitize.css",
+    "generate:sass": "scss-bundle -e ./src/constants/_index.scss -d constants.scss",
     "test": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
-    "clean:dist": "rimraf egeo-theme-stratio.css",
+    "clean:dist": "rimraf *.css *.css.map *.scss",
     "commit": "git-cz"
   },
   "author": "Stratio",
@@ -37,8 +36,9 @@
     "postcss-cssnext": "3.0.2",
     "postcss-import": "10.0.0",
     "rimraf": "2.5.4",
+    "sanitize.css": "5.0.0",
     "sass-lint": "1.10.2",
-    "sanitize.css": "5.0.0"
+    "scss-bundle": "2.0.1-beta.7"
   },
   "config": {
     "commitizen": {

@@ -9,7 +9,7 @@
  * SPDX-License-Identifier: Apache-2.0.
  */
 @import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
-@import '../../node_modules/@stratio/egeo-ui-base/utils/colors';
+@import '../constants/colors';
 
 .sth-tab-box-left-shadow {
    box-shadow: 3px -2px 6px 0px rgba(153, 153, 153, 0.0980392) inset;

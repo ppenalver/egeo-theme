@@ -29,6 +29,7 @@ dist
 /egeo-theme-stratio.css
 /egeo-theme-stratio.min.css
 *.map
+/constants.scss
 
 yarn.lock
 package-lock.json
