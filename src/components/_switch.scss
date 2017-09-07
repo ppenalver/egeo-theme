@@ -8,44 +8,37 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
+@import '../constants/fonts';
 @import '../constants/colors';
 
-.sth-switch {
-   font-family: egeo-get-font(body);
+.st-switch {
+   font-family: $egeo-nunito-sans;
 }
 
-.sth-switch__label {
+.st-switch__label {
    text-align: left;
-   font-size: 15px;
+   font-size: $egeo-font-size-xsmall;
 }
-
-.sth-switch__help {
-   color: $neutral-08;
-   font-size: 12px;
-}
-
-.sth-switch__circle {
-   background-color: white;
+.st-switch__circle {
+   background-color: $neutral-00;
 }
 
 .st-switch--on {
-   .sth-switch__box {
-      background-color: $brand;
+   .st-switch__box {
+      background-color: $action-primary-default;
    }
-   .sth-switch__circle {
-      margin-left: 13px;
-      border: solid 1px $brand;
+   .st-switch__circle {
+      border: solid 1px $action-primary-default;
    }
 }
 
 .st-switch--off {
-   .sth-switch__box {
+   .st-switch__box {
       background-color: $neutral-02;
       border: solid 1px $neutral-07;
    }
 
-   .sth-switch__circle {
+   .st-switch__circle {
       border: solid 1px $neutral-07;
    }
 }

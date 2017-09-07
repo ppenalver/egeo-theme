@@ -17,7 +17,7 @@
 * st-checkbox: update styles
 * st-breadcrumb refactor
 * st-header: refactor styles
-
+* st-switch: add new styles
 
 ## 0.14.0 (August 18, 2017)
 
