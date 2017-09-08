@@ -8,57 +8,58 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-@import '../../node_modules/@stratio/egeo-ui-base/utils/typography';
 @import '../constants/colors';
+@import '../constants/fonts';
 
-.sth-radio {
-   font-size: egeo-get-font-size(body_medium);
-   font-family: egeo-get-font(body);
-
-   &:hover {
-
-      .sth-radio-custom {
-         border-color: $brand;
-
-         &:before {
-            background: $brand;
-         }
-      }
-
-   }
-
-   &.disabled {
-      .sth-radio-custom {
-         &:hover {
-            border: 1px solid $neutral-07;
-         }
-      }
-   }
+.st-radio {
+   font-family: $egeo-nunito-sans;
+   font-size: $egeo-font-size-xsmall;
+   line-height: 1.33px;
+   color: $action-secondary-07;
 }
 
-.sth-radio-custom {
+.st-radio.disabled {
+   color: $neutral-05;
+}
+
+.radio-flex > * {
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.radio-flex > .st-radio:last-of-type {
+   margin-bottom: 0;
+}
+
+.radio-inline > * {
+   display: inline-block;
+   margin-right: 16px;
+}
+
+.radio-inline > .st-radio:last-of-type {
+   margin-bottom: 0;
+}
+
+.custom-radio {
    background-color: $neutral-00;
    border: 1px solid $neutral-07;
 
-
    &.checked {
-      border-color: $neutral-13;
+      background-color: $action-primary-default;
+      border-color: $action-primary-default;
 
       &:before {
-         background: $neutral-13;
+         background-color: $neutral-00;
       }
+   }
+
+   &.disabled.checked {
+      background-color: $neutral-05;
    }
 
    &.disabled {
-      border-color: $neutral-07;
-      opacity: 0.9;
+      border-color: $neutral-05;
+      color: $neutral-05;
    }
 
-   &:hover {
-      border-color: $brand;
-
-      &:before {
-         background: $brand;
-      }
-   }
 }
